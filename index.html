@@ -198,17 +198,19 @@
     .btn-nav-download {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
+      gap: 6px;
       background: linear-gradient(135deg, var(--primary), #047857);
       color: #ffffff;
-      padding: 9px 18px;
+      padding: 8px 16px;
       border-radius: var(--radius-full);
-      font-size: 0.88rem;
+      font-size: 0.82rem;
       font-weight: 700;
       text-decoration: none;
       box-shadow: 0 4px 15px rgba(5, 150, 105, 0.4);
       transition: all 0.25s ease;
       border: 1px solid rgba(255, 255, 255, 0.15);
+      white-space: nowrap;
+      flex-shrink: 0;
     }
 
     .btn-nav-download:hover {
@@ -825,24 +827,31 @@
       box-shadow: var(--shadow-card);
     }
 
+    .feature-card-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 12px;
+    }
+
     .feature-icon-box {
-      width: 48px;
-      height: 48px;
-      border-radius: 12px;
+      width: 42px;
+      height: 42px;
+      min-width: 42px;
+      border-radius: 11px;
       background: rgba(16, 185, 129, 0.15);
       border: 1px solid rgba(16, 185, 129, 0.3);
       color: #34d399;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 18px;
     }
 
     .feature-card h3 {
-      font-size: 1.2rem;
+      font-size: 1.15rem;
       font-weight: 700;
-      margin-bottom: 8px;
       color: #f0fdf4;
+      margin: 0;
     }
 
     .feature-card p {
@@ -865,24 +874,32 @@
       padding: 30px 24px;
     }
 
+    .step-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
     .step-badge {
-      width: 38px;
-      height: 38px;
+      width: 36px;
+      height: 36px;
+      min-width: 36px;
       border-radius: 50%;
       background: linear-gradient(135deg, var(--gold), #d97706);
       color: #000000;
       font-weight: 800;
+      font-size: 0.95rem;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 16px;
       box-shadow: 0 4px 14px var(--gold-glow);
     }
 
     .step-box h3 {
-      font-size: 1.15rem;
+      font-size: 1.12rem;
       font-weight: 700;
-      margin-bottom: 8px;
+      margin: 0;
     }
 
     .step-box p {
@@ -955,7 +972,7 @@
 
     /* Bottom CTA */
     .cta-banner {
-      margin: 60px 0 30px;
+      margin: 60px 0 0;
       background: radial-gradient(circle at 50% 0%, #064e3b, #032118);
       border: 1px solid var(--border-highlight);
       border-radius: var(--radius-lg);
@@ -979,11 +996,22 @@
 
     /* Footer */
     footer {
-      border-top: 1px solid var(--border-subtle);
-      padding: 45px 0 25px;
-      background: rgba(4, 11, 9, 0.95);
+      border-top: none;
+      padding: 48px 0 28px;
+      background: linear-gradient(180deg, rgba(4, 11, 9, 0.98), rgba(7, 19, 15, 0.98));
       color: var(--text-dim);
       font-size: 0.88rem;
+      position: relative;
+    }
+
+    footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--primary), var(--gold), var(--primary));
     }
 
     .footer-row {
@@ -1093,8 +1121,34 @@
 
     /* Mobile Responsive */
     @media (max-width: 768px) {
+      .container {
+        padding: 0 16px;
+      }
       .nav-links {
         display: none;
+      }
+      .navbar {
+        padding: 12px 0;
+        gap: 8px;
+      }
+      .nav-logo {
+        width: 34px;
+        height: 34px;
+      }
+      .nav-title {
+        font-size: 1rem;
+      }
+      .nav-brand {
+        gap: 8px;
+      }
+      .btn-nav-download {
+        padding: 7px 12px;
+        font-size: 0.78rem;
+        gap: 5px;
+      }
+      .btn-nav-download svg {
+        width: 13px;
+        height: 13px;
       }
       .download-layout {
         grid-template-columns: 1fr;
@@ -1116,9 +1170,57 @@
       .phone-chassis {
         width: 250px;
       }
+      .hero {
+        padding: 40px 0 28px;
+      }
+      .hero-title {
+        font-size: clamp(1.6rem, 7vw, 2.2rem);
+      }
+      .section-wrap {
+        padding: 45px 0;
+      }
+      .section-heading {
+        font-size: clamp(1.5rem, 5vw, 2rem);
+      }
+      .section-lead {
+        font-size: 0.95rem;
+      }
+      .features-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+      .feature-card {
+        padding: 20px 18px;
+      }
+      .steps-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+      .step-box {
+        padding: 22px 18px;
+      }
+      .cta-banner {
+        margin: 40px 0 20px;
+        padding: 36px 18px;
+      }
+      .cta-banner h2 {
+        font-size: clamp(1.4rem, 5vw, 1.9rem);
+      }
+      .btn-main-download {
+        font-size: 1rem;
+        padding: 14px 22px !important;
+      }
+      footer {
+        padding: 36px 16px 22px;
+      }
       .footer-row {
         grid-template-columns: 1fr;
         gap: 28px;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
       }
     }
   </style>
@@ -1344,7 +1446,6 @@
               </div>
             </div>
             <div class="phone-meta">
-              <div class="screen-num">Screen 01</div>
               <div class="screen-name">Category Deck</div>
               <div class="screen-desc">20+ topics: Quran, Hadith, Prophets, and Fiqh</div>
             </div>
@@ -1359,7 +1460,6 @@
               </div>
             </div>
             <div class="phone-meta">
-              <div class="screen-num">Screen 02</div>
               <div class="screen-name">Lesson Milestones</div>
               <div class="screen-desc">Level progression with mastery stars and badges</div>
             </div>
@@ -1374,7 +1474,6 @@
               </div>
             </div>
             <div class="phone-meta">
-              <div class="screen-num">Screen 03</div>
               <div class="screen-name">Quiz &amp; 4 Lifelines</div>
               <div class="screen-desc">Countdown timer with 50:50, Hint, Ask Scholar, Skip</div>
             </div>
@@ -1389,7 +1488,6 @@
               </div>
             </div>
             <div class="phone-meta">
-              <div class="screen-num">Screen 04</div>
               <div class="screen-name">Hadith &amp; Ayah Sources</div>
               <div class="screen-desc">Exact Surah, Ayah, and Sahih Hadith citations</div>
             </div>
@@ -1404,7 +1502,6 @@
               </div>
             </div>
             <div class="phone-meta">
-              <div class="screen-num">Screen 05</div>
               <div class="screen-name">Heart &amp; Streaks</div>
               <div class="screen-desc">Duolingo-style encouraging feedback on answers</div>
             </div>
@@ -1419,7 +1516,6 @@
               </div>
             </div>
             <div class="phone-meta">
-              <div class="screen-num">Screen 06</div>
               <div class="screen-name">हिन्दी (Hindi) Mode</div>
               <div class="screen-desc">Full Devanagari translation with verified terms</div>
             </div>
@@ -1434,7 +1530,6 @@
               </div>
             </div>
             <div class="phone-meta">
-              <div class="screen-num">Screen 07</div>
               <div class="screen-name">AI Voice Scholar</div>
               <div class="screen-desc">Real-time vocal explanations and Ayah recitations</div>
             </div>
@@ -1449,7 +1544,6 @@
               </div>
             </div>
             <div class="phone-meta">
-              <div class="screen-num">Screen 08</div>
               <div class="screen-name">Scholar Settings</div>
               <div class="screen-desc">Choose reciter styles, speech pace, and haptics</div>
             </div>
@@ -1464,7 +1558,6 @@
               </div>
             </div>
             <div class="phone-meta">
-              <div class="screen-num">Screen 09</div>
               <div class="screen-name">اردو (Urdu) RTL</div>
               <div class="screen-desc">Elegant Noto Nastaliq right-to-left experience</div>
             </div>
@@ -1479,7 +1572,6 @@
               </div>
             </div>
             <div class="phone-meta">
-              <div class="screen-num">Screen 10</div>
               <div class="screen-name">OLED Dark Mode</div>
               <div class="screen-desc">High contrast theme for evening Ramadan study</div>
             </div>
@@ -1498,50 +1590,62 @@
 
         <div class="features-grid">
           <div class="feature-card">
-            <div class="feature-icon-box">
+            <div class="feature-card-header">
+              <div class="feature-icon-box">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
             </div>
-            <h3>1,000+ Verified Questions</h3>
+              <h3>1,000+ Verified Questions</h3>
+            </div>
             <p>Every single quiz item cites authentic sources: Quranic Surah &amp; Ayah or Sahih Hadith (Bukhari, Muslim, Tirmidhi, Abu Dawud, Nasai) with full contextual explanations.</p>
           </div>
 
           <div class="feature-card">
-            <div class="feature-icon-box">
+            <div class="feature-card-header">
+              <div class="feature-icon-box">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
             </div>
-            <h3>Trilingual Localization</h3>
+              <h3>Trilingual Localization</h3>
+            </div>
             <p>Full native experience in English, Nastaliq Urdu (اردو), and Hindi (हिन्दी). Instant 1-tap language switching anywhere without losing your streak.</p>
           </div>
 
           <div class="feature-card">
-            <div class="feature-icon-box">
+            <div class="feature-card-header">
+              <div class="feature-icon-box">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
             </div>
-            <h3>AI Voice Scholar</h3>
+              <h3>AI Voice Scholar</h3>
+            </div>
             <p>Listen to vocal recitations and scholar-level explanations powered by AI. Choose voice speeds, tone, and reciter preferences in settings.</p>
           </div>
 
           <div class="feature-card">
-            <div class="feature-icon-box">
+            <div class="feature-card-header">
+              <div class="feature-icon-box">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"/><path d="M10.71 5.05A16 16 0 0 1 22.56 9"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
             </div>
-            <h3>100% Offline Capability</h3>
+              <h3>100% Offline Capability</h3>
+            </div>
             <p>All categories, question banks, explanations, and sound effects work offline. Learn on flights, commutes, or during travel without internet.</p>
           </div>
 
           <div class="feature-card">
-            <div class="feature-icon-box">
+            <div class="feature-card-header">
+              <div class="feature-icon-box">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
             </div>
-            <h3>Gamified Progression</h3>
+              <h3>Gamified Progression</h3>
+            </div>
             <p>Stay motivated with hearts, XP points, continuous daily streaks, lesson levels, and 4 lifeline tools: 50:50, Hint, Ask Scholar, and Skip.</p>
           </div>
 
           <div class="feature-card">
-            <div class="feature-icon-box">
+            <div class="feature-card-header">
+              <div class="feature-icon-box">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
             </div>
-            <h3>100% Ad-Free &amp; Private</h3>
+              <h3>100% Ad-Free &amp; Private</h3>
+            </div>
             <p>Zero advertisements, zero marketing trackers, zero paywalls. Optional cloud sync with Google or continue completely anonymously as guest.</p>
           </div>
         </div>
@@ -1557,20 +1661,23 @@
 
         <div class="steps-grid">
           <div class="step-box">
-            <div class="step-badge">1</div>
-            <h3>Download APK</h3>
+            <div class="step-header"><div class="step-badge">1</div>
+              <h3>Download APK</h3>
+            </div>
             <p>Tap <strong>Download APK</strong> above or scan the QR code to save <code>IslamicQuiz-latest.apk</code> directly to your device.</p>
           </div>
 
           <div class="step-box">
-            <div class="step-badge">2</div>
-            <h3>Allow Installation</h3>
+            <div class="step-header"><div class="step-badge">2</div>
+              <h3>Allow Installation</h3>
+            </div>
             <p>If Android prompts <em>"File might be harmful"</em>, tap <strong>Download Anyway</strong>. If prompted for permissions, toggle <strong>Allow from this source</strong>.</p>
           </div>
 
           <div class="step-box">
-            <div class="step-badge">3</div>
-            <h3>Open &amp; Enjoy</h3>
+            <div class="step-header"><div class="step-badge">3</div>
+              <h3>Open &amp; Enjoy</h3>
+            </div>
             <p>Tap the notification or open Downloads, click <strong>Install</strong>, and launch Islamic Quiz! Existing installs update seamlessly without losing data.</p>
           </div>
         </div>
