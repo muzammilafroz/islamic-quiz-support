@@ -4,6 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Islamic Quiz - Privacy Policy | پرائیویسی پالیسی | गोपनीयता नीति</title>
+  
+  <!-- Google Fonts: Noto Nastaliq Urdu & Noto Sans Devanagari -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
     :root {
       --bg: #f4f8f6;
@@ -42,22 +48,55 @@
       transition: background-color 0.2s, color 0.2s;
     }
 
-    /* Urdu specific styling */
+    /* Urdu Noto Nastaliq styling with generous vertical room for ligatures */
     [lang="ur"] {
-      font-family: "Noto Nastaliq Urdu", "Jameel Noori Nastaliq", "Urdu Typesetting", "Arabic Typesetting", Tahoma, sans-serif;
-      font-size: 18px;
-      line-height: 2.1;
+      font-family: "Noto Nastaliq Urdu", serif;
+      font-size: 19px;
+      line-height: 2.45;
       direction: rtl;
       text-align: right;
+      word-spacing: 2px;
+    }
+    [lang="ur"] h1 {
+      font-family: "Noto Nastaliq Urdu", serif;
+      font-size: 2.25rem;
+      line-height: 2.3;
+      margin-top: 10px;
+      margin-bottom: 22px;
+      font-weight: 700;
+    }
+    [lang="ur"] h2 {
+      font-family: "Noto Nastaliq Urdu", serif;
+      font-size: 1.65rem;
+      line-height: 2.3;
+      margin-top: 1.8em;
+      padding-bottom: 12px;
+      font-weight: 700;
+    }
+    [lang="ur"] p, [lang="ur"] li, [lang="ur"] .meta-box, [lang="ur"] .note-box {
+      font-family: "Noto Nastaliq Urdu", serif;
+      line-height: 2.5;
+    }
+    [lang="ur"] strong {
+      font-weight: 700;
+      color: var(--primary-dark);
+    }
+    @media (prefers-color-scheme: dark) {
+      [lang="ur"] strong {
+        color: var(--primary);
+      }
     }
 
-    /* Hindi specific styling */
+    /* Hindi Noto Sans Devanagari styling */
     [lang="hi"] {
-      font-family: "Noto Sans Devanagari", "Kohinoor Devanagari", "Mangal", system-ui, sans-serif;
+      font-family: "Noto Sans Devanagari", system-ui, sans-serif;
       font-size: 16.5px;
-      line-height: 1.8;
+      line-height: 1.85;
       direction: ltr;
       text-align: left;
+    }
+    [lang="hi"] h1, [lang="hi"] h2 {
+      font-family: "Noto Sans Devanagari", system-ui, sans-serif;
     }
 
     /* Language Switcher Bar */
@@ -91,10 +130,24 @@
       color: var(--text);
       font-size: 14px;
       font-weight: 600;
-      padding: 6px 16px;
+      padding: 6px 18px;
       border-radius: 9999px;
       cursor: pointer;
       transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #btn-ur {
+      font-family: "Noto Nastaliq Urdu", serif;
+      font-size: 16px;
+      line-height: 1.5;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    #btn-hi {
+      font-family: "Noto Sans Devanagari", sans-serif;
+      font-size: 14.5px;
     }
     .lang-btn:hover {
       background: var(--primary-light);
@@ -118,10 +171,6 @@
       margin-bottom: 16px;
       line-height: 1.3;
     }
-    [lang="ur"] h1 {
-      font-size: 2.1rem;
-      line-height: 1.6;
-    }
     h2 {
       margin-top: 2em;
       margin-bottom: 0.6em;
@@ -130,10 +179,6 @@
       padding-bottom: 6px;
       font-size: 1.35rem;
       line-height: 1.4;
-    }
-    [lang="ur"] h2 {
-      font-size: 1.55rem;
-      line-height: 1.8;
     }
     a {
       color: var(--primary);
@@ -148,15 +193,15 @@
     }
     ul {
       margin: 0.8em 0;
-      padding-inline-start: 24px;
+      padding-inline-start: 26px;
     }
     li {
-      margin: 0.45em 0;
+      margin: 0.5em 0;
     }
     .meta-box {
       background: var(--card-bg);
       border-left: 4px solid var(--primary);
-      padding: 12px 16px;
+      padding: 14px 18px;
       border-radius: 6px;
       margin-bottom: 24px;
       font-size: 0.95rem;
@@ -168,7 +213,7 @@
     .note-box {
       background: var(--primary-light);
       border: 1px solid var(--border);
-      padding: 14px 18px;
+      padding: 16px 20px;
       border-radius: 8px;
       margin: 1.2em 0;
     }
@@ -424,10 +469,8 @@
 
   <script>
     function switchLanguage(lang) {
-      // Validate
       if (!['en', 'ur', 'hi'].includes(lang)) lang = 'en';
 
-      // Update contents
       document.querySelectorAll('.policy-content').forEach(function(el) {
         el.classList.remove('active');
       });
@@ -436,7 +479,6 @@
         activeSection.classList.add('active');
       }
 
-      // Update buttons
       document.querySelectorAll('.lang-btn').forEach(function(btn) {
         btn.classList.remove('active');
         btn.setAttribute('aria-selected', 'false');
@@ -447,11 +489,9 @@
         activeBtn.setAttribute('aria-selected', 'true');
       }
 
-      // Update document direction and lang
       document.documentElement.lang = lang;
       document.documentElement.dir = (lang === 'ur') ? 'rtl' : 'ltr';
 
-      // Persist in localStorage and URL hash
       try {
         localStorage.setItem('iq_privacy_lang', lang);
       } catch (e) {}
@@ -460,7 +500,6 @@
       }
     }
 
-    // Auto-detect on page load from URL (#ur, #hi, ?lang=ur) or localStorage or browser
     (function init() {
       var lang = 'en';
       var hash = window.location.hash.replace('#', '').toLowerCase();
