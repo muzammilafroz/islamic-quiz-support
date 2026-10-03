@@ -124,10 +124,6 @@
 
     /* Navbar */
     .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 18px 0;
       position: sticky;
       top: 0;
       background: rgba(7, 19, 15, 0.85);
@@ -135,6 +131,14 @@
       -webkit-backdrop-filter: blur(16px);
       z-index: 100;
       border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 18px;
+      padding-bottom: 18px;
     }
 
     .nav-brand {
@@ -1002,6 +1006,7 @@
       color: var(--text-dim);
       font-size: 0.88rem;
       position: relative;
+      width: 100%;
     }
 
     footer::before {
@@ -1127,8 +1132,9 @@
       .nav-links {
         display: none;
       }
-      .navbar {
-        padding: 12px 0;
+      .nav-container {
+        padding-top: 12px;
+        padding-bottom: 12px;
         gap: 8px;
       }
       .nav-logo {
@@ -1211,7 +1217,7 @@
         padding: 14px 22px !important;
       }
       footer {
-        padding: 36px 16px 22px;
+        padding: 36px 0 22px;
       }
       .footer-row {
         grid-template-columns: 1fr;
@@ -1235,9 +1241,9 @@
   </div>
   <div class="grid-pattern" aria-hidden="true"></div>
 
-  <div class="container">
-    <!-- Navbar -->
-    <header class="navbar">
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
       <a href="#" class="nav-brand">
         <img src="assets/icon_512.png" alt="Islamic Quiz Logo" class="nav-logo">
         <span class="nav-title">Islamic Quiz <span class="nav-badge">v1.1.9</span></span>
@@ -1260,10 +1266,11 @@
           Download APK
         </a>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- Hero Section -->
-    <main>
+  <!-- Hero Section -->
+  <main class="container">
       <section class="hero">
         <div class="bismillah-text">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
 
@@ -1749,8 +1756,9 @@
       </section>
     </main>
 
-    <!-- Footer -->
-    <footer>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
       <div class="footer-row">
         <div>
           <h5 style="color:#f0fdf4; font-size:1.1rem; margin-bottom:8px;">Islamic Quiz &middot; اسلامی کوئز</h5>
@@ -1791,8 +1799,8 @@
           <a href="https://github.com/muzammilafroz/islamic-quiz-support/issues" target="_blank" rel="noopener">Issues &amp; Feedback</a>
         </div>
       </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
 
   <!-- Lightbox Modal -->
   <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
