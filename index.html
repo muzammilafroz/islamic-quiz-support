@@ -3,21 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Islamic Quiz App — Download Official APK & Knowledge Hub</title>
-  <meta name="description" content="Download Islamic Quiz for Android. 4,000+ authentic questions on Quran, Hadith, Seerah, and Fiqh with Sahih references, AI Voice Scholar, trilingual support (English, Urdu, Hindi), and 100% offline play.">
-  <meta name="keywords" content="Islamic Quiz, Islamic Quiz App, Quran Quiz, Hadith Quiz, Seerah Quiz, Android APK, Islamic Learning, Free Islamic App">
-  
-  <!-- Open Graph / Social Meta -->
+  <title>Islamic Quiz App — Official Android APK &amp; Product Showcase</title>
+  <meta name="description" content="Download the official Islamic Quiz app for Android. 1,000+ authentic questions on Quran, Hadith, and Seerah with Sahih citations, AI Voice Scholar, trilingual mode (English, Urdu, Hindi), and 100% offline play.">
+  <meta name="keywords" content="Islamic Quiz, Quran Quiz, Hadith Quiz, Seerah Quiz, Islamic Knowledge App, Android APK, Free Islamic App, Trilingual Quiz">
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Islamic Quiz — Learn Authentic Quran, Hadith & Seerah">
-  <meta property="og:description" content="Official Android APK download. 4,000+ questions, trilingual (English, Urdu, Hindi), AI Voice Scholar, 100% offline and zero ads.">
+  <meta property="og:title" content="Islamic Quiz — Official Android App">
+  <meta property="og:description" content="1,000+ authentic questions with Sahih citations, AI Voice Scholar, and 100% offline play. Download APK free & ad-free.">
   <meta property="og:image" content="assets/promo_1024x500.png">
   <link rel="icon" type="image/png" href="assets/icon_512.png">
 
-  <!-- Google Fonts -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Noto+Nastaliq+Urdu:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Noto+Nastaliq+Urdu:wght@600;700&family=Noto+Sans+Devanagari:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
     :root {
@@ -25,23 +25,22 @@
       --primary-hover: #10b981;
       --primary-glow: rgba(16, 185, 129, 0.4);
       --primary-dark: #064e3b;
-      --accent-gold: #f59e0b;
-      --accent-gold-glow: rgba(245, 158, 11, 0.35);
-      --bg-dark: #06110e;
-      --bg-card: rgba(13, 27, 22, 0.75);
-      --bg-card-hover: rgba(18, 38, 31, 0.85);
-      --border-subtle: rgba(16, 185, 129, 0.18);
-      --border-highlight: rgba(16, 185, 129, 0.45);
+      --gold: #f59e0b;
+      --gold-glow: rgba(245, 158, 11, 0.3);
+      --bg-dark: #07130f;
+      --bg-card: rgba(13, 29, 23, 0.85);
+      --bg-card-hover: rgba(19, 41, 33, 0.95);
+      --border-subtle: rgba(16, 185, 129, 0.16);
+      --border-highlight: rgba(16, 185, 129, 0.4);
       --text-main: #f0fdf4;
       --text-muted: #94a3b8;
       --text-dim: #64748b;
-      --glass-blur: blur(16px);
       --radius-sm: 8px;
-      --radius-md: 14px;
-      --radius-lg: 22px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
       --radius-full: 9999px;
-      --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.5), 0 0 1px 1px var(--border-subtle);
-      --shadow-glow: 0 0 40px -5px var(--primary-glow);
+      --shadow-card: 0 12px 35px -10px rgba(0, 0, 0, 0.6);
+      --shadow-glow: 0 0 45px -5px var(--primary-glow);
     }
 
     * {
@@ -59,82 +58,66 @@
       font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
       background-color: var(--bg-dark);
       color: var(--text-main);
-      line-height: 1.65;
+      line-height: 1.6;
       overflow-x: hidden;
-      position: relative;
       min-height: 100vh;
     }
 
     /* Ambient Background Glows */
-    .ambient-bg {
+    .ambient-glow {
       position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
+      inset: 0;
       pointer-events: none;
       z-index: 0;
       overflow: hidden;
     }
 
-    .ambient-orb {
+    .glow-orb {
       position: absolute;
       border-radius: 50%;
-      filter: blur(120px);
-      opacity: 0.22;
-      animation: floatOrb 20s infinite alternate ease-in-out;
+      filter: blur(130px);
+      opacity: 0.25;
     }
 
-    .orb-1 {
-      top: -10%;
-      left: 15%;
-      width: 500px;
-      height: 500px;
+    .glow-1 {
+      top: -150px;
+      left: 10%;
+      width: 550px;
+      height: 550px;
       background: radial-gradient(circle, #059669, #022c22);
     }
 
-    .orb-2 {
-      top: 40%;
-      right: -10%;
+    .glow-2 {
+      top: 35%;
+      right: -100px;
+      width: 650px;
+      height: 650px;
+      background: radial-gradient(circle, #047857, #06110e);
+    }
+
+    .glow-3 {
+      bottom: -150px;
+      left: 20%;
       width: 600px;
       height: 600px;
-      background: radial-gradient(circle, #047857, #06110e);
-      animation-delay: -7s;
-    }
-
-    .orb-3 {
-      bottom: -15%;
-      left: 20%;
-      width: 550px;
-      height: 550px;
       background: radial-gradient(circle, #d97706, #064e3b);
       opacity: 0.15;
-      animation-delay: -12s;
     }
 
-    @keyframes floatOrb {
-      0% { transform: translate(0, 0) scale(1); }
-      100% { transform: translate(40px, 30px) scale(1.1); }
-    }
-
-    /* Islamic Geometric Pattern Overlay */
-    .geometric-grid {
+    .grid-pattern {
       position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: radial-gradient(rgba(16, 185, 129, 0.08) 1px, transparent 1px);
+      inset: 0;
+      background-image: radial-gradient(rgba(16, 185, 129, 0.08) 1.2px, transparent 1.2px);
       background-size: 32px 32px;
       pointer-events: none;
       z-index: 0;
     }
 
-    /* Layout Wrapper */
-    .app-container {
+    /* Container */
+    .container {
       position: relative;
       z-index: 1;
-      max-width: 1240px;
+      max-width: 1200px;
       margin: 0 auto;
       padding: 0 24px;
     }
@@ -144,12 +127,12 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px 0;
+      padding: 18px 0;
       position: sticky;
       top: 0;
-      background: rgba(6, 17, 14, 0.85);
-      backdrop-filter: var(--glass-blur);
-      -webkit-backdrop-filter: var(--glass-blur);
+      background: rgba(7, 19, 15, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
       z-index: 100;
       border-bottom: 1px solid var(--border-subtle);
     }
@@ -157,21 +140,21 @@
     .nav-brand {
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap: 12px;
       text-decoration: none;
       color: inherit;
     }
 
-    .nav-icon {
-      width: 44px;
-      height: 44px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
-      border: 1px solid rgba(255, 255, 255, 0.1);
+    .nav-logo {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      box-shadow: 0 4px 14px rgba(5, 150, 105, 0.35);
+      border: 1px solid rgba(255, 255, 255, 0.15);
     }
 
-    .nav-title-group h1 {
-      font-size: 1.25rem;
+    .nav-title {
+      font-size: 1.2rem;
       font-weight: 800;
       letter-spacing: -0.02em;
       background: linear-gradient(135deg, #f0fdf4, #a7f3d0);
@@ -182,7 +165,7 @@
       gap: 8px;
     }
 
-    .version-tag {
+    .nav-badge {
       font-size: 0.7rem;
       font-weight: 700;
       padding: 2px 8px;
@@ -190,21 +173,20 @@
       background: rgba(16, 185, 129, 0.15);
       color: #34d399;
       border: 1px solid rgba(16, 185, 129, 0.3);
-      letter-spacing: 0;
       -webkit-text-fill-color: initial;
     }
 
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 26px;
+      gap: 24px;
       list-style: none;
     }
 
     .nav-links a {
       color: var(--text-muted);
       text-decoration: none;
-      font-size: 0.95rem;
+      font-size: 0.92rem;
       font-weight: 600;
       transition: color 0.2s ease;
     }
@@ -213,21 +195,15 @@
       color: var(--text-main);
     }
 
-    .nav-actions {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-    }
-
     .btn-nav-download {
       display: inline-flex;
       align-items: center;
       gap: 8px;
       background: linear-gradient(135deg, var(--primary), #047857);
       color: #ffffff;
-      padding: 9px 20px;
+      padding: 9px 18px;
       border-radius: var(--radius-full);
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       font-weight: 700;
       text-decoration: none;
       box-shadow: 0 4px 15px rgba(5, 150, 105, 0.4);
@@ -238,26 +214,23 @@
     .btn-nav-download:hover {
       transform: translateY(-2px);
       box-shadow: 0 6px 20px var(--primary-glow);
-      background: linear-gradient(135deg, var(--primary-hover), var(--primary));
     }
 
-    /* Hero Section */
+    /* Hero */
     .hero {
       padding: 60px 0 40px;
       text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
-      position: relative;
     }
 
-    .bismillah-badge {
+    .bismillah-text {
       font-family: 'Amiri', serif;
-      font-size: 1.35rem;
-      color: var(--accent-gold);
-      margin-bottom: 16px;
-      letter-spacing: 0.05em;
-      text-shadow: 0 2px 10px var(--accent-gold-glow);
+      font-size: 1.4rem;
+      color: var(--gold);
+      margin-bottom: 14px;
+      text-shadow: 0 2px 10px var(--gold-glow);
     }
 
     .hero-pill {
@@ -266,25 +239,24 @@
       gap: 8px;
       background: rgba(16, 185, 129, 0.1);
       border: 1px solid var(--border-subtle);
-      padding: 6px 18px;
+      padding: 6px 16px;
       border-radius: var(--radius-full);
       font-size: 0.85rem;
       font-weight: 600;
       color: #6ee7b7;
-      margin-bottom: 24px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    .hero-title {
-      font-size: clamp(2.4rem, 5.5vw, 3.8rem);
-      font-weight: 800;
-      line-height: 1.15;
-      letter-spacing: -0.03em;
-      max-width: 900px;
       margin-bottom: 20px;
     }
 
-    .hero-title .highlight {
+    .hero-title {
+      font-size: clamp(2.3rem, 5vw, 3.6rem);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      max-width: 880px;
+      margin-bottom: 18px;
+    }
+
+    .hero-title .gradient-text {
       background: linear-gradient(135deg, #34d399 20%, #fbbf24 90%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -293,56 +265,55 @@
     .hero-languages {
       display: flex;
       justify-content: center;
-      gap: 16px;
-      margin-bottom: 20px;
+      gap: 12px;
+      margin-bottom: 22px;
       flex-wrap: wrap;
     }
 
-    .lang-chip {
-      font-size: 0.95rem;
+    .lang-badge {
+      font-size: 0.9rem;
       padding: 4px 14px;
       border-radius: var(--radius-full);
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
       color: #e2e8f0;
     }
 
-    .lang-chip.ur {
+    .lang-badge.ur {
       font-family: 'Noto Nastaliq Urdu', serif;
-      line-height: 1.6;
       padding-top: 6px;
       color: #fed7aa;
     }
 
-    .lang-chip.hi {
+    .lang-badge.hi {
       font-family: 'Noto Sans Devanagari', sans-serif;
       color: #a7f3d0;
     }
 
-    .hero-description {
-      font-size: 1.15rem;
+    .hero-desc {
+      font-size: 1.12rem;
       color: var(--text-muted);
-      max-width: 760px;
-      margin-bottom: 38px;
+      max-width: 740px;
+      margin-bottom: 36px;
       line-height: 1.7;
     }
 
-    /* Download Box Component */
-    .download-hero-card {
+    /* Main Download Card */
+    .download-card {
       width: 100%;
-      max-width: 780px;
+      max-width: 760px;
       background: var(--bg-card);
       border: 1px solid var(--border-highlight);
       border-radius: var(--radius-lg);
-      padding: 36px 32px;
-      backdrop-filter: var(--glass-blur);
-      -webkit-backdrop-filter: var(--glass-blur);
+      padding: 34px 30px;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
       box-shadow: var(--shadow-card), var(--shadow-glow);
       position: relative;
       overflow: hidden;
     }
 
-    .download-hero-card::before {
+    .download-card::before {
       content: '';
       position: absolute;
       top: 0;
@@ -352,520 +323,609 @@
       background: linear-gradient(90deg, #10b981, #f59e0b, #10b981);
     }
 
-    .download-grid {
+    .download-layout {
       display: grid;
       grid-template-columns: 1fr auto;
-      gap: 32px;
+      gap: 30px;
       align-items: center;
     }
 
-    .download-main-area {
+    .download-info {
       text-align: left;
     }
 
-    .btn-mega-download {
+    .btn-main-download {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 14px;
+      gap: 12px;
       width: 100%;
       background: linear-gradient(135deg, #059669 0%, #10b981 100%);
       color: #ffffff;
-      padding: 18px 30px;
+      padding: 17px 28px;
       border-radius: var(--radius-md);
-      font-size: 1.25rem;
+      font-size: 1.22rem;
       font-weight: 800;
       text-decoration: none;
-      box-shadow: 0 8px 30px rgba(5, 150, 105, 0.45);
+      box-shadow: 0 8px 28px rgba(5, 150, 105, 0.45);
       border: 1px solid rgba(255, 255, 255, 0.2);
       transition: all 0.25s ease;
       cursor: pointer;
     }
 
-    .btn-mega-download:hover {
-      transform: translateY(-3px);
+    .btn-main-download:hover {
+      transform: translateY(-2px);
       box-shadow: 0 12px 35px rgba(16, 185, 129, 0.6);
       background: linear-gradient(135deg, #047857 0%, #34d399 100%);
     }
 
-    .download-meta {
+    .meta-specs {
       display: flex;
       flex-wrap: wrap;
       gap: 14px;
       margin-top: 14px;
       font-size: 0.85rem;
-      color: var(--text-dim);
     }
 
-    .meta-item {
+    .spec-item {
       display: flex;
       align-items: center;
       gap: 6px;
       color: #94a3b8;
     }
 
-    .qr-card-area {
+    .qr-box {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 16px;
-      background: rgba(0, 0, 0, 0.25);
+      padding: 14px;
+      background: rgba(0, 0, 0, 0.3);
       border-radius: var(--radius-md);
       border: 1px solid var(--border-subtle);
     }
 
-    .qr-image {
-      width: 130px;
-      height: 130px;
+    .qr-img {
+      width: 125px;
+      height: 125px;
       border-radius: 8px;
       background: #ffffff;
-      padding: 6px;
+      padding: 5px;
       object-fit: contain;
     }
 
-    .qr-caption {
-      margin-top: 10px;
+    .qr-label {
+      margin-top: 8px;
       font-size: 0.75rem;
       color: #cbd5e1;
       text-align: center;
       font-weight: 600;
     }
 
-    /* Trust & Badges Bar */
-    .trust-badges {
+    .trust-row {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 20px;
-      margin-top: 26px;
-      padding-top: 22px;
+      margin-top: 24px;
+      padding-top: 20px;
       border-top: 1px solid rgba(255, 255, 255, 0.08);
       font-size: 0.85rem;
       color: #cbd5e1;
     }
 
-    .trust-badge-item {
+    .trust-item {
       display: flex;
       align-items: center;
       gap: 6px;
-      font-weight: 500;
     }
 
-    .trust-badge-item svg {
+    .trust-item svg {
       color: #34d399;
     }
 
-    /* Alternative Mirrors Section */
-    .mirrors-accordion {
-      margin-top: 18px;
-      text-align: left;
-    }
-
-    .mirrors-toggle {
-      background: none;
-      border: none;
-      color: var(--accent-gold);
-      font-size: 0.85rem;
-      font-weight: 600;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .mirrors-list {
-      display: none;
-      margin-top: 12px;
-      background: rgba(0, 0, 0, 0.2);
-      border-radius: var(--radius-sm);
-      padding: 12px 16px;
-      font-size: 0.85rem;
-    }
-
-    .mirrors-list.show {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    .mirrors-list a {
-      color: #38bdf8;
-      text-decoration: none;
-      word-break: break-all;
-    }
-
-    .mirrors-list a:hover {
-      text-decoration: underline;
-    }
-
-    /* Section Styling */
-    .section {
-      padding: 80px 0;
+    /* Section Headers */
+    .section-wrap {
+      padding: 70px 0;
       position: relative;
     }
 
-    .section-header {
+    .section-title-box {
       text-align: center;
-      margin-bottom: 50px;
+      margin-bottom: 45px;
     }
 
-    .section-tag {
-      display: inline-block;
+    .section-kicker {
       font-size: 0.8rem;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.12em;
       color: var(--primary-hover);
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
-    .section-title {
-      font-size: clamp(2rem, 4vw, 2.75rem);
+    .section-heading {
+      font-size: clamp(1.9rem, 3.8vw, 2.6rem);
       font-weight: 800;
       letter-spacing: -0.02em;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
     }
 
-    .section-subtitle {
+    .section-lead {
       font-size: 1.05rem;
       color: var(--text-muted);
-      max-width: 680px;
+      max-width: 650px;
       margin: 0 auto;
     }
 
-    /* Video Player Showcase */
-    .video-showcase-container {
-      max-width: 900px;
+    /* =========================================================
+       VIDEO SHOWCASE: AUTOPLAYING MUTED LOOP WITH CUSTOM SLEEK FRAME
+       NO BROWSER CONTROLS, PERFECT ROUNDED CORNERS
+       ========================================================= */
+    .video-showcase-card {
+      max-width: 960px;
       margin: 0 auto;
       background: var(--bg-card);
       border: 1px solid var(--border-highlight);
       border-radius: var(--radius-lg);
-      padding: 14px;
-      box-shadow: var(--shadow-card), 0 0 50px -10px rgba(5, 150, 105, 0.25);
+      padding: 16px;
+      box-shadow: var(--shadow-card), 0 0 50px -10px rgba(5, 150, 105, 0.3);
       position: relative;
     }
 
-    .video-wrapper {
+    /* Rounded video screen wrapper with GPU clip fix */
+    .video-screen-frame {
       position: relative;
-      border-radius: var(--radius-md);
-      overflow: hidden;
+      width: 100%;
       aspect-ratio: 16 / 9;
       background: #000000;
+      border-radius: 18px;
+      overflow: hidden;
+      transform: translateZ(0);
+      -webkit-mask-image: -webkit-radial-gradient(white, black);
+      cursor: pointer;
     }
 
-    .video-wrapper video {
+    .video-screen-frame video {
       width: 100%;
       height: 100%;
       display: block;
       object-fit: cover;
+      border-radius: inherit;
     }
 
-    .video-features-row {
+    /* Floating Modern Sound & Play Badges (No ugly browser player) */
+    .video-floating-badge {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      z-index: 10;
+      background: rgba(7, 19, 15, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      color: #f0fdf4;
+      padding: 8px 16px;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+      transition: all 0.2s ease;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .video-floating-badge:hover {
+      background: rgba(5, 150, 105, 0.9);
+      border-color: rgba(255, 255, 255, 0.4);
+      transform: scale(1.04);
+    }
+
+    .video-status-badge {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 10;
+      background: rgba(0, 0, 0, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      color: #a7f3d0;
+      padding: 5px 12px;
+      border-radius: var(--radius-full);
+      font-size: 0.78rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .video-status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #10b981;
+      box-shadow: 0 0 8px #10b981;
+      animation: pulseDot 2s infinite ease-in-out;
+    }
+
+    @keyframes pulseDot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.85); }
+    }
+
+    .video-features-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 16px;
-      margin-top: 24px;
-      padding: 0 10px;
+      margin-top: 20px;
+      padding: 0 8px;
     }
 
-    .video-feat-item {
+    .vid-pill {
       display: flex;
       align-items: center;
       gap: 10px;
       font-size: 0.9rem;
-      color: #cbd5e1;
       font-weight: 600;
+      color: #cbd5e1;
     }
 
-    .feat-icon-bullet {
+    .vid-pill-icon {
       width: 28px;
       height: 28px;
-      border-radius: var(--radius-full);
+      border-radius: 50%;
       background: rgba(16, 185, 129, 0.15);
       color: #34d399;
       display: flex;
       align-items: center;
       justify-content: center;
+      font-size: 0.85rem;
       flex-shrink: 0;
     }
 
-    /* Interactive Smartphone Showcase & Gallery */
-    .mockup-gallery-grid {
-      display: grid;
-      grid-template-columns: 380px 1fr;
-      gap: 50px;
-      align-items: center;
-      margin-top: 30px;
-    }
-
-    /* Realistic Phone Mockup Frame */
-    .phone-mockup-wrapper {
+    /* =========================================================
+       SCREENSHOTS: PIXEL-PERFECT 9:16 PHONE DECK & CAROUSEL
+       NO CROPPING, NO DISTORTION, FULL RESOLUTION
+       ========================================================= */
+    .screenshots-controls-bar {
       display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .filter-tabs {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .filter-pill {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #cbd5e1;
+      padding: 7px 16px;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .filter-pill:hover {
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border-color: rgba(16, 185, 129, 0.3);
+    }
+
+    .filter-pill.active {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary-hover);
+      box-shadow: 0 2px 10px rgba(5, 150, 105, 0.4);
+    }
+
+    .carousel-arrows {
+      display: flex;
+      gap: 10px;
+    }
+
+    .carousel-btn {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      color: #f0fdf4;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
       justify-content: center;
-      position: relative;
+      cursor: pointer;
+      transition: all 0.2s ease;
     }
 
-    .phone-mockup {
-      width: 320px;
-      height: 650px;
-      background: #1e293b;
-      border-radius: 46px;
-      padding: 12px;
-      box-shadow: 0 25px 60px -12px rgba(0, 0, 0, 0.8),
-                  inset 0 0 0 2px #475569,
-                  inset 0 0 0 5px #0f172a,
-                  0 0 35px rgba(16, 185, 129, 0.25);
-      position: relative;
+    .carousel-btn:hover {
+      background: var(--primary);
+      border-color: var(--primary-hover);
+      transform: scale(1.06);
     }
 
-    /* Dynamic Island / Notch */
-    .phone-island {
+    /* Smooth Horizontal Scroll Track */
+    .screenshots-deck {
+      display: flex;
+      gap: 24px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding: 15px 5px 30px;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(16, 185, 129, 0.4) transparent;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .screenshots-deck::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .screenshots-deck::-webkit-scrollbar-thumb {
+      background: rgba(16, 185, 129, 0.3);
+      border-radius: var(--radius-full);
+    }
+
+    .screenshots-deck::-webkit-scrollbar-thumb:hover {
+      background: var(--primary);
+    }
+
+    /* Individual Phone Mockup Card */
+    .phone-card {
+      flex: 0 0 290px;
+      scroll-snap-align: start;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.25s ease;
+    }
+
+    .phone-card:hover {
+      transform: translateY(-6px);
+    }
+
+    /* Realistic Phone Chassis - EXACT 9:16 Aspect Ratio */
+    .phone-chassis {
+      width: 290px;
+      background: #0f1c17;
+      border-radius: 38px;
+      padding: 8px;
+      border: 2px solid #233b31;
+      box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.7),
+                  0 0 20px rgba(16, 185, 129, 0.15);
+      position: relative;
+      cursor: pointer;
+    }
+
+    /* Top Speaker Bar & Notch */
+    .chassis-header {
       position: absolute;
-      top: 20px;
+      top: 14px;
       left: 50%;
       transform: translateX(-50%);
-      width: 90px;
-      height: 20px;
+      width: 75px;
+      height: 16px;
       background: #000000;
-      border-radius: 20px;
+      border-radius: 12px;
       z-index: 10;
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      padding-right: 14px;
+      padding-right: 12px;
     }
 
-    .phone-camera {
-      width: 8px;
-      height: 8px;
+    .camera-lens {
+      width: 6px;
+      height: 6px;
       border-radius: 50%;
       background: #1e293b;
       border: 1px solid #334155;
     }
 
-    .phone-screen {
+    /* Screen display: Exact 9:16 aspect-ratio ensures zero crop */
+    .chassis-screen {
       width: 100%;
-      height: 100%;
-      background: #000000;
-      border-radius: 36px;
+      aspect-ratio: 9 / 16;
+      border-radius: 30px;
       overflow: hidden;
+      background: #000000;
+      transform: translateZ(0);
+      -webkit-mask-image: -webkit-radial-gradient(white, black);
       position: relative;
     }
 
-    .phone-screen img {
+    .chassis-screen img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       display: block;
-      transition: opacity 0.3s ease, transform 0.3s ease;
+      border-radius: inherit;
+      transition: transform 0.3s ease;
     }
 
-    /* Screenshot Selector Cards */
-    .screens-info-panel {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
+    .phone-card:hover .chassis-screen img {
+      transform: scale(1.02);
     }
 
-    .active-screen-detail {
-      background: var(--bg-card);
-      border: 1px solid var(--border-highlight);
-      border-radius: var(--radius-md);
-      padding: 24px;
-      margin-bottom: 12px;
-    }
-
-    .active-screen-badge {
-      font-size: 0.8rem;
-      font-weight: 700;
-      color: var(--accent-gold);
-      margin-bottom: 6px;
-    }
-
-    .active-screen-title {
-      font-size: 1.45rem;
-      font-weight: 700;
-      margin-bottom: 8px;
-      color: #f0fdf4;
-    }
-
-    .active-screen-desc {
-      font-size: 0.95rem;
-      color: var(--text-muted);
-      line-height: 1.6;
-    }
-
-    /* Thumbnails Slider Grid */
-    .thumbnails-scroll {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 12px;
-    }
-
-    .thumb-btn {
+    .screen-overlay-zoom {
+      position: absolute;
+      inset: 0;
       background: rgba(0, 0, 0, 0.35);
-      border: 2px solid transparent;
-      border-radius: 12px;
-      overflow: hidden;
-      cursor: pointer;
-      padding: 4px;
-      transition: all 0.2s ease;
-      text-align: left;
+      opacity: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.2s ease;
+      color: #ffffff;
+      font-size: 1.5rem;
+      border-radius: inherit;
     }
 
-    .thumb-btn:hover {
-      border-color: rgba(16, 185, 129, 0.4);
-      transform: translateY(-2px);
+    .phone-card:hover .screen-overlay-zoom {
+      opacity: 1;
     }
 
-    .thumb-btn.active {
-      border-color: #10b981;
-      background: rgba(16, 185, 129, 0.15);
-      box-shadow: 0 0 15px rgba(16, 185, 129, 0.3);
-    }
-
-    .thumb-img {
+    /* Screen Label Info */
+    .phone-meta {
+      margin-top: 14px;
+      text-align: center;
       width: 100%;
-      aspect-ratio: 9 / 16;
-      border-radius: 8px;
-      object-fit: cover;
-      display: block;
     }
 
-    .thumb-label {
-      font-size: 0.75rem;
-      font-weight: 600;
-      color: #cbd5e1;
-      margin-top: 6px;
-      display: block;
+    .phone-meta .screen-num {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 2px;
+    }
+
+    .phone-meta .screen-name {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #f0fdf4;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
     }
 
-    /* Features Grid */
+    .phone-meta .screen-desc {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+      line-height: 1.4;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* Feature Pillars */
     .features-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 24px;
-      margin-top: 30px;
     }
 
     .feature-card {
       background: var(--bg-card);
       border: 1px solid var(--border-subtle);
       border-radius: var(--radius-md);
-      padding: 30px 26px;
-      transition: all 0.3s ease;
-      backdrop-filter: var(--glass-blur);
-      -webkit-backdrop-filter: var(--glass-blur);
+      padding: 28px 24px;
+      transition: all 0.25s ease;
     }
 
     .feature-card:hover {
-      transform: translateY(-4px);
       border-color: var(--border-highlight);
+      transform: translateY(-3px);
       box-shadow: var(--shadow-card);
-      background: var(--bg-card-hover);
     }
 
     .feature-icon-box {
-      width: 52px;
-      height: 52px;
-      border-radius: 14px;
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
       background: rgba(16, 185, 129, 0.15);
       border: 1px solid rgba(16, 185, 129, 0.3);
       color: #34d399;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
 
     .feature-card h3 {
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       font-weight: 700;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       color: #f0fdf4;
     }
 
     .feature-card p {
-      font-size: 0.95rem;
-      color: var(--text-muted);
-      line-height: 1.65;
-    }
-
-    /* Installation Steps */
-    .install-steps-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 24px;
-      margin-top: 30px;
-    }
-
-    .step-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-md);
-      padding: 32px 26px;
-      position: relative;
-    }
-
-    .step-num {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--accent-gold), #d97706);
-      color: #000000;
-      font-weight: 800;
-      font-size: 1.1rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 15px var(--accent-gold-glow);
-    }
-
-    .step-card h3 {
-      font-size: 1.15rem;
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
-
-    .step-card p {
-      font-size: 0.9rem;
+      font-size: 0.92rem;
       color: var(--text-muted);
       line-height: 1.6;
     }
 
-    /* FAQ Accordion */
-    .faq-container {
-      max-width: 820px;
-      margin: 30px auto 0;
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
+    /* Steps */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
     }
 
-    .faq-item {
+    .step-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 30px 24px;
+    }
+
+    .step-badge {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold), #d97706);
+      color: #000000;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+      box-shadow: 0 4px 14px var(--gold-glow);
+    }
+
+    .step-box h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .step-box p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    /* FAQ */
+    .faq-stack {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .faq-card {
       background: var(--bg-card);
       border: 1px solid var(--border-subtle);
       border-radius: var(--radius-md);
       overflow: hidden;
-      transition: border-color 0.2s ease;
     }
 
-    .faq-item:hover {
+    .faq-card:hover {
       border-color: var(--border-highlight);
     }
 
-    .faq-question {
+    .faq-btn {
       width: 100%;
       text-align: left;
-      padding: 20px 24px;
+      padding: 18px 22px;
       background: none;
       border: none;
       color: #f0fdf4;
-      font-size: 1.05rem;
+      font-size: 1.02rem;
       font-weight: 700;
       cursor: pointer;
       display: flex;
@@ -874,121 +934,105 @@
       gap: 16px;
     }
 
-    .faq-icon {
-      font-size: 1.25rem;
+    .faq-sign {
       color: var(--primary-hover);
+      font-size: 1.3rem;
       transition: transform 0.25s ease;
       flex-shrink: 0;
     }
 
-    .faq-item.active .faq-icon {
+    .faq-card.active .faq-sign {
       transform: rotate(45deg);
     }
 
-    .faq-answer {
+    .faq-body {
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.3s ease, padding 0.3s ease;
-      padding: 0 24px;
+      padding: 0 22px;
       color: var(--text-muted);
-      font-size: 0.95rem;
-      line-height: 1.7;
+      font-size: 0.93rem;
+      line-height: 1.65;
     }
 
-    .faq-item.active .faq-answer {
-      max-height: 400px;
-      padding: 0 24px 20px;
+    .faq-card.active .faq-body {
+      max-height: 350px;
+      padding: 0 22px 20px;
     }
 
-    /* Call to Action Banner */
+    /* Bottom CTA */
     .cta-banner {
-      margin: 80px 0 40px;
+      margin: 60px 0 30px;
       background: radial-gradient(circle at 50% 0%, #064e3b, #032118);
       border: 1px solid var(--border-highlight);
       border-radius: var(--radius-lg);
-      padding: 60px 30px;
+      padding: 50px 24px;
       text-align: center;
-      position: relative;
-      overflow: hidden;
       box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), var(--shadow-glow);
     }
 
     .cta-banner h2 {
-      font-size: clamp(2rem, 4vw, 2.75rem);
+      font-size: clamp(1.9rem, 3.8vw, 2.6rem);
       font-weight: 800;
-      margin-bottom: 16px;
-      letter-spacing: -0.02em;
+      margin-bottom: 14px;
     }
 
     .cta-banner p {
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       color: #a7f3d0;
-      max-width: 600px;
-      margin: 0 auto 32px;
+      max-width: 580px;
+      margin: 0 auto 28px;
     }
 
     /* Footer */
     footer {
       border-top: 1px solid var(--border-subtle);
-      padding: 50px 0 30px;
-      background: rgba(4, 11, 9, 0.9);
+      padding: 45px 0 25px;
+      background: rgba(4, 11, 9, 0.95);
       color: var(--text-dim);
-      font-size: 0.9rem;
+      font-size: 0.88rem;
     }
 
-    .footer-grid {
+    .footer-row {
       display: grid;
       grid-template-columns: 2fr 1fr 1fr;
-      gap: 40px;
-      margin-bottom: 40px;
-    }
-
-    .footer-brand h4 {
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: var(--text-main);
-      margin-bottom: 12px;
-    }
-
-    .footer-brand p {
-      line-height: 1.6;
-      max-width: 420px;
-      margin-bottom: 16px;
+      gap: 36px;
+      margin-bottom: 36px;
     }
 
     .footer-col h5 {
       color: #e2e8f0;
-      font-size: 0.95rem;
+      font-size: 0.92rem;
       font-weight: 700;
-      margin-bottom: 16px;
+      margin-bottom: 14px;
     }
 
-    .footer-links {
+    .footer-menu {
       list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 9px;
     }
 
-    .footer-links a {
+    .footer-menu a {
       color: var(--text-muted);
       text-decoration: none;
       transition: color 0.2s;
     }
 
-    .footer-links a:hover {
+    .footer-menu a:hover {
       color: var(--primary-hover);
     }
 
     .footer-bottom {
       border-top: 1px solid rgba(255, 255, 255, 0.06);
-      padding-top: 24px;
+      padding-top: 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      gap: 16px;
-      font-size: 0.85rem;
+      gap: 14px;
+      font-size: 0.83rem;
     }
 
     .footer-bottom a {
@@ -1000,15 +1044,12 @@
       color: var(--text-main);
     }
 
-    /* Modal / Lightbox */
-    .lightbox-modal {
+    /* Lightbox Modal */
+    .lightbox {
       display: none;
       position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.92);
+      inset: 0;
+      background: rgba(0, 0, 0, 0.94);
       backdrop-filter: blur(8px);
       z-index: 2000;
       align-items: center;
@@ -1016,18 +1057,27 @@
       padding: 20px;
     }
 
-    .lightbox-modal.active {
+    .lightbox.active {
       display: flex;
     }
 
-    .lightbox-content {
+    .lightbox-img-box {
       max-width: 90vw;
       max-height: 85vh;
-      border-radius: 16px;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+      aspect-ratio: 9 / 16;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8);
     }
 
-    .lightbox-close {
+    .lightbox-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+    .lightbox-close-btn {
       position: absolute;
       top: 25px;
       right: 25px;
@@ -1042,92 +1092,76 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: background 0.2s;
     }
 
-    .lightbox-close:hover {
+    .lightbox-close-btn:hover {
       background: rgba(255, 255, 255, 0.3);
     }
 
-    /* Responsive Adjustments */
-    @media (max-width: 992px) {
-      .mockup-gallery-grid {
-        grid-template-columns: 1fr;
-        justify-items: center;
-      }
-      .thumbnails-scroll {
-        grid-template-columns: repeat(5, 1fr);
-      }
-      .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-      }
-    }
-
+    /* Mobile Responsive */
     @media (max-width: 768px) {
-      .navbar {
-        padding: 16px 0;
-      }
       .nav-links {
         display: none;
       }
-      .download-grid {
+      .download-layout {
         grid-template-columns: 1fr;
         text-align: center;
       }
-      .download-main-area {
+      .download-info {
         text-align: center;
       }
-      .download-meta {
+      .meta-specs {
         justify-content: center;
       }
-      .qr-card-area {
-        max-width: 220px;
+      .qr-box {
+        max-width: 200px;
         margin: 0 auto;
       }
-      .thumbnails-scroll {
-        grid-template-columns: repeat(3, 1fr);
+      .phone-card {
+        flex: 0 0 250px;
       }
-      .features-grid {
+      .phone-chassis {
+        width: 250px;
+      }
+      .footer-row {
         grid-template-columns: 1fr;
+        gap: 28px;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- Ambient Light Orbs & Grid -->
-  <div class="ambient-bg" aria-hidden="true">
-    <div class="ambient-orb orb-1"></div>
-    <div class="ambient-orb orb-2"></div>
-    <div class="ambient-orb orb-3"></div>
+  <!-- Background Ambient Lights & Islamic Grid -->
+  <div class="ambient-glow" aria-hidden="true">
+    <div class="glow-orb glow-1"></div>
+    <div class="glow-orb glow-2"></div>
+    <div class="glow-orb glow-3"></div>
   </div>
-  <div class="geometric-grid" aria-hidden="true"></div>
+  <div class="grid-pattern" aria-hidden="true"></div>
 
-  <div class="app-container">
+  <div class="container">
     <!-- Navbar -->
     <header class="navbar">
       <a href="#" class="nav-brand">
-        <img src="assets/icon_512.png" alt="Islamic Quiz Icon" class="nav-icon">
-        <div class="nav-title-group">
-          <h1>Islamic Quiz <span class="version-tag">v1.1.9</span></h1>
-        </div>
+        <img src="assets/icon_512.png" alt="Islamic Quiz Logo" class="nav-logo">
+        <span class="nav-title">Islamic Quiz <span class="nav-badge">v1.1.9</span></span>
       </a>
 
       <nav>
         <ul class="nav-links">
-          <li><a href="#features">Features</a></li>
-          <li><a href="#screenshots">Screenshots</a></li>
           <li><a href="#video">Demo Video</a></li>
+          <li><a href="#screenshots">Screenshots</a></li>
+          <li><a href="#features">Features</a></li>
           <li><a href="#install">Install Guide</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="privacy-policy.html">Privacy Policy</a></li>
         </ul>
       </nav>
 
-      <div class="nav-actions">
-        <a href="IslamicQuiz-latest.apk" class="btn-nav-download" download id="nav-download-btn">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      <div>
+        <a href="IslamicQuiz-latest.apk" class="btn-nav-download" download>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           Download APK
         </a>
       </div>
@@ -1136,240 +1170,357 @@
     <!-- Hero Section -->
     <main>
       <section class="hero">
-        <div class="bismillah-badge">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
-        
+        <div class="bismillah-text">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+
         <div class="hero-pill">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          Official Android Release &middot; Free &amp; Ad-Free
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          Official Android Release &middot; Free &amp; Zero Ads
         </div>
 
         <h1 class="hero-title">
-          Master Islamic Knowledge with <span class="highlight">Authentic Quizzes &amp; AI Scholar</span>
+          Master Islamic Knowledge with <span class="gradient-text">Authentic Quizzes &amp; AI Scholar</span>
         </h1>
 
         <div class="hero-languages">
-          <span class="lang-chip">English</span>
-          <span class="lang-chip ur">اردو &middot; مکمل نستعلیق</span>
-          <span class="lang-chip hi">हिन्दी &middot; प्रामाणिक संदर्भ</span>
+          <span class="lang-badge">English</span>
+          <span class="lang-badge ur">اردو &middot; مکمل نستعلیق</span>
+          <span class="lang-badge hi">हिन्दी &middot; प्रामाणिक संदर्भ</span>
         </div>
 
-        <p class="hero-description">
-          Over <strong>4,000+ verified questions</strong> across Quran, Hadith, Seerah, Prophets, and Fiqh.
-          Every single question citing authentic Quranic Surahs and Sahih Hadith collections, paired with real-time AI Voice audio explanations and 100% offline capability.
+        <p class="hero-desc">
+          Over <strong>1,000+ verified questions</strong> across Quran, Hadith, Seerah, Prophets, and Fiqh. Every single question cites authentic Surahs and Sahih Hadith collections, paired with AI Voice audio explanations and 100% offline capability.
         </p>
 
-        <!-- Main Download Card -->
-        <div class="download-hero-card" id="download-card">
-          <div class="download-grid">
-            <div class="download-main-area">
-              <a href="IslamicQuiz-latest.apk" class="btn-mega-download" download id="hero-download-btn">
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                Download APK Now (v1.1.9)
+        <!-- Download Action Card -->
+        <div class="download-card">
+          <div class="download-layout">
+            <div class="download-info">
+              <a href="IslamicQuiz-latest.apk" class="btn-main-download" download id="main-download-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Download APK (v1.1.9)
               </a>
 
-              <div class="download-meta">
-                <span class="meta-item">
+              <div class="meta-specs">
+                <span class="spec-item">
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
                   Android 8.0+
                 </span>
-                <span class="meta-item">
+                <span class="spec-item">
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
                   38.9 MB
                 </span>
-                <span class="meta-item">
+                <span class="spec-item">
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                  Updated Oct 2026
+                  Latest Oct 2026
                 </span>
-                <span class="meta-item">
+                <span class="spec-item">
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                   SHA-256 Verified
                 </span>
               </div>
 
-              <!-- Mirrors Toggle -->
-              <div class="mirrors-accordion">
-                <button class="mirrors-toggle" onclick="toggleMirrors()" type="button" aria-expanded="false">
-                  <span>Alternative Mirrors &amp; Checksums</span>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-                </button>
-                <div class="mirrors-list" id="mirrors-panel">
-                  <div><strong>Direct APK:</strong> <a href="IslamicQuiz-latest.apk" download>IslamicQuiz-latest.apk</a></div>
-                  <div><strong>GitHub Raw Mirror:</strong> <a href="https://raw.githubusercontent.com/muzammilafroz/Islamic-Quiz-App/apk-test/IslamicQuiz-debug.apk" target="_blank" rel="noopener">Islamic-Quiz-App/apk-test/IslamicQuiz-debug.apk</a></div>
-                  <div><strong>SHA-256 Checksum:</strong> <code style="font-size:0.75rem; color:#a7f3d0; word-break:break-all;">25FF767E1BF1C79B79895B3032D80B39158E1248DCD80E42741BF99818D46849</code></div>
-                </div>
+              <div style="margin-top:14px; font-size:0.83rem; color:#64748b;">
+                Backup Mirror: <a href="https://raw.githubusercontent.com/muzammilafroz/Islamic-Quiz-App/apk-test/IslamicQuiz-debug.apk" target="_blank" rel="noopener" style="color:#38bdf8; text-decoration:none;">GitHub Raw (apk-test)</a>
               </div>
             </div>
 
-            <!-- QR Code Box -->
-            <div class="qr-card-area">
-              <img src="assets/download-qr.png" alt="Scan QR code to download Islamic Quiz APK" class="qr-image" loading="lazy">
-              <span class="qr-caption">Scan with Phone Camera to Install</span>
+            <!-- QR Box -->
+            <div class="qr-box">
+              <img src="assets/download-qr.png" alt="Scan to download Islamic Quiz APK" class="qr-img" loading="lazy">
+              <span class="qr-label">Scan with Phone Camera</span>
             </div>
           </div>
 
-          <!-- Trust Badges -->
-          <div class="trust-badges">
-            <div class="trust-badge-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              <span>100% Virus &amp; Malware Free</span>
+          <!-- Trust Row -->
+          <div class="trust-row">
+            <div class="trust-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span>100% Virus &amp; Safe</span>
             </div>
-            <div class="trust-badge-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+            <div class="trust-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
               <span>Zero Advertisements</span>
             </div>
-            <div class="trust-badge-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="1" y1="1" x2="23" y2="23"/><path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"/><path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"/><path d="M10.71 5.05A16 16 0 0 1 22.56 9"/><path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"/></svg>
+            <div class="trust-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="1" y1="1" x2="23" y2="23"/><path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"/><path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"/><path d="M10.71 5.05A16 16 0 0 1 22.56 9"/><path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"/></svg>
               <span>Works Fully Offline</span>
             </div>
-            <div class="trust-badge-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-              <span>Authentic Sources Only</span>
+            <div class="trust-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              <span>Authentic Hadith Sources</span>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Video Showcase Section -->
-      <section class="section" id="video">
-        <div class="section-header">
-          <span class="section-tag">Interactive Preview</span>
-          <h2 class="section-title">See the Experience in Motion</h2>
-          <p class="section-subtitle">
-            Watch the 60-second walkthrough showcasing voice scholars, lifelines, interactive categories, and explanations.
+      <!-- =========================================================
+           VIDEO SHOWCASE: AUTOPLAYING MUTED LOOP WITH CUSTOM CORNERS
+           ========================================================= -->
+      <section class="section-wrap" id="video">
+        <div class="section-title-box">
+          <div class="section-kicker">App in Action</div>
+          <h2 class="section-heading">Watch the Live Interactive Walkthrough</h2>
+          <p class="section-lead">
+            Experience how the AI Voice Scholar, lifelines, Quranic evidences, and multilingual quizzes function in real time.
           </p>
         </div>
 
-        <div class="video-showcase-container">
-          <div class="video-wrapper">
-            <video controls preload="metadata" poster="assets/promo_1024x500.png" id="promo-video">
+        <div class="video-showcase-card">
+          <!-- Perfectly rounded container with GPU clipping fix and NO browser player controls -->
+          <div class="video-screen-frame" id="video-frame" onclick="togglePlayPause()">
+            <div class="video-status-badge">
+              <div class="video-status-dot"></div>
+              <span>Live Walkthrough</span>
+            </div>
+
+            <!-- Autoplay muted loop playsinline without default browser chrome controls -->
+            <video autoplay muted loop playsinline preload="auto" poster="assets/promo_1024x500.png" id="promo-video">
               <source src="assets/islamic_quiz_promo.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
-          </div>
 
-          <div class="video-features-row">
-            <div class="video-feat-item">
-              <div class="feat-icon-bullet">🎙️</div>
-              <span>AI Voice Scholar Explanation</span>
-            </div>
-            <div class="video-feat-item">
-              <div class="feat-icon-bullet">💖</div>
-              <span>Dynamic Hearts &amp; 4 Lifelines</span>
-            </div>
-            <div class="video-feat-item">
-              <div class="feat-icon-bullet">📜</div>
-              <span>Ayah &amp; Hadith Exact Citations</span>
-            </div>
-            <div class="video-feat-item">
-              <div class="feat-icon-bullet">🌙</div>
-              <span>OLED Dark &amp; Multi-language UI</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Screenshots & Phone Mockup Gallery -->
-      <section class="section" id="screenshots">
-        <div class="section-header">
-          <span class="section-tag">Visual Gallery</span>
-          <h2 class="section-title">Designed for Focus &amp; Beauty</h2>
-          <p class="section-subtitle">
-            Explore actual in-app screenshots spanning quiz challenges, Quranic evidence cards, settings, and full Urdu &amp; Hindi localization.
-          </p>
-        </div>
-
-        <div class="mockup-gallery-grid">
-          <!-- Smartphone Mockup Frame -->
-          <div class="phone-mockup-wrapper">
-            <div class="phone-mockup">
-              <div class="phone-island">
-                <div class="phone-camera"></div>
-              </div>
-              <div class="phone-screen" onclick="openLightbox()">
-                <img src="assets/screenshots/01_home_category_deck.png" id="main-phone-img" alt="Islamic Quiz Home Screen" loading="lazy">
-              </div>
+            <!-- Custom Floating Sound Pill -->
+            <div class="video-floating-badge" id="sound-pill" onclick="toggleSound(event)">
+              <span id="sound-icon">🔇</span>
+              <span id="sound-label">Muted &middot; Tap for Audio</span>
             </div>
           </div>
 
-          <!-- Screen Info and Thumbnails Selector -->
-          <div class="screens-info-panel">
-            <div class="active-screen-detail" id="screen-detail-box">
-              <div class="active-screen-badge" id="screen-badge">SCREEN 01 OF 10</div>
-              <h3 class="active-screen-title" id="screen-title">Category Deck &amp; Comprehensive Topics</h3>
-              <p class="active-screen-desc" id="screen-desc">
-                Browse through 20+ comprehensive categories including Pillars of Islam, Quranic Knowledge, Life of the Prophet (Seerah), Hadith Sciences, and Islamic History.
-              </p>
+          <div class="video-features-grid">
+            <div class="vid-pill">
+              <div class="vid-pill-icon">🎙️</div>
+              <span>AI Voice Scholar Audio</span>
             </div>
-
-            <!-- Thumbnails Selector -->
-            <div class="thumbnails-scroll" role="tablist" aria-label="Screenshots selector">
-              <button class="thumb-btn active" onclick="selectScreen(0)" type="button" role="tab" aria-selected="true" data-index="0">
-                <img src="assets/screenshots/01_home_category_deck.png" alt="Home Screen Thumbnail" class="thumb-img" loading="lazy">
-                <span class="thumb-label">01 Categories</span>
-              </button>
-              <button class="thumb-btn" onclick="selectScreen(1)" type="button" role="tab" aria-selected="false" data-index="1">
-                <img src="assets/screenshots/02_lesson_list.png" alt="Lessons Thumbnail" class="thumb-img" loading="lazy">
-                <span class="thumb-label">02 Lessons</span>
-              </button>
-              <button class="thumb-btn" onclick="selectScreen(2)" type="button" role="tab" aria-selected="false" data-index="2">
-                <img src="assets/screenshots/03_quiz_question.png" alt="Quiz Challenge Thumbnail" class="thumb-img" loading="lazy">
-                <span class="thumb-label">03 Quiz Timer</span>
-              </button>
-              <button class="thumb-btn" onclick="selectScreen(3)" type="button" role="tab" aria-selected="false" data-index="3">
-                <img src="assets/screenshots/04_quran_hadith_explanation.png" alt="Quran Evidence Thumbnail" class="thumb-img" loading="lazy">
-                <span class="thumb-label">04 Evidences</span>
-              </button>
-              <button class="thumb-btn" onclick="selectScreen(4)" type="button" role="tab" aria-selected="false" data-index="4">
-                <img src="assets/screenshots/05_hearts_breaking.png" alt="Hearts & Lives Thumbnail" class="thumb-img" loading="lazy">
-                <span class="thumb-label">05 Lifelines</span>
-              </button>
-              <button class="thumb-btn" onclick="selectScreen(5)" type="button" role="tab" aria-selected="false" data-index="5">
-                <img src="assets/screenshots/06_history_continue_hindi.png" alt="Hindi Mode Thumbnail" class="thumb-img" loading="lazy">
-                <span class="thumb-label">06 हिन्दी Mode</span>
-              </button>
-              <button class="thumb-btn" onclick="selectScreen(6)" type="button" role="tab" aria-selected="false" data-index="6">
-                <img src="assets/screenshots/07_ai_voice_scholar.png" alt="Voice Scholar Thumbnail" class="thumb-img" loading="lazy">
-                <span class="thumb-label">07 AI Scholar</span>
-              </button>
-              <button class="thumb-btn" onclick="selectScreen(7)" type="button" role="tab" aria-selected="false" data-index="7">
-                <img src="assets/screenshots/08_settings_ai_scholar.png" alt="Voice Settings Thumbnail" class="thumb-img" loading="lazy">
-                <span class="thumb-label">08 Settings</span>
-              </button>
-              <button class="thumb-btn" onclick="selectScreen(8)" type="button" role="tab" aria-selected="false" data-index="8">
-                <img src="assets/screenshots/09_urdu_rtl_quiz.png" alt="Urdu RTL Thumbnail" class="thumb-img" loading="lazy">
-                <span class="thumb-label">09 اردو نستعلیق</span>
-              </button>
-              <button class="thumb-btn" onclick="selectScreen(9)" type="button" role="tab" aria-selected="false" data-index="9">
-                <img src="assets/screenshots/10_dark_theme_hindi_quiz.png" alt="Dark Theme Thumbnail" class="thumb-img" loading="lazy">
-                <span class="thumb-label">10 Dark Theme</span>
-              </button>
+            <div class="vid-pill">
+              <div class="vid-pill-icon">💖</div>
+              <span>Hearts &amp; 4 Lifelines</span>
+            </div>
+            <div class="vid-pill">
+              <div class="vid-pill-icon">📜</div>
+              <span>Ayah &amp; Sahih Hadith Citations</span>
+            </div>
+            <div class="vid-pill">
+              <div class="vid-pill-icon">🌙</div>
+              <span>OLED Dark &amp; RTL Urdu</span>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Key Features Section -->
-      <section class="section" id="features">
-        <div class="section-header">
-          <span class="section-tag">Why Islamic Quiz?</span>
-          <h2 class="section-title">Built for the Global Ummah</h2>
-          <p class="section-subtitle">
-            An ad-free, authentic learning experience designed with modern education principles.
+      <!-- =========================================================
+           SCREENSHOTS: EXACT 9:16 DEVICE CAROUSEL (ZERO CROPPING)
+           ========================================================= -->
+      <section class="section-wrap" id="screenshots">
+        <div class="section-title-box">
+          <div class="section-kicker">Interactive App Showcase</div>
+          <h2 class="section-heading">Explore Every Screen in True 9:16 Clarity</h2>
+          <p class="section-lead">
+            Every screen rendered in its native aspect ratio. Swipe or scroll through categories, quiz timers, evidences, and localization.
           </p>
+        </div>
+
+        <!-- Controls & Filters -->
+        <div class="screenshots-controls-bar">
+          <div class="filter-tabs">
+            <button class="filter-pill active" onclick="filterScreenshots('all', this)" type="button">All Screens (10)</button>
+            <button class="filter-pill" onclick="filterScreenshots('quizzes', this)" type="button">Quizzes &amp; Lifelines</button>
+            <button class="filter-pill" onclick="filterScreenshots('evidences', this)" type="button">Evidences</button>
+            <button class="filter-pill" onclick="filterScreenshots('voice', this)" type="button">AI Scholar</button>
+            <button class="filter-pill" onclick="filterScreenshots('languages', this)" type="button">اردو / हिन्दी</button>
+          </div>
+
+          <div class="carousel-arrows">
+            <button class="carousel-btn" onclick="scrollCarousel(-1)" aria-label="Previous screenshot" type="button">&larr;</button>
+            <button class="carousel-btn" onclick="scrollCarousel(1)" aria-label="Next screenshot" type="button">&rarr;</button>
+          </div>
+        </div>
+
+        <!-- Horizontal Scrollable Device Deck -->
+        <div class="screenshots-deck" id="screenshots-deck">
+          
+          <!-- Screen 1 -->
+          <div class="phone-card" data-category="quizzes">
+            <div class="phone-chassis" onclick="openLightbox('assets/screenshots/01_home_category_deck.png', '01. Home Category Deck')">
+              <div class="chassis-header"><div class="camera-lens"></div></div>
+              <div class="chassis-screen">
+                <img src="assets/screenshots/01_home_category_deck.png" alt="01 Category Deck" loading="lazy">
+                <div class="screen-overlay-zoom">🔍</div>
+              </div>
+            </div>
+            <div class="phone-meta">
+              <div class="screen-num">Screen 01</div>
+              <div class="screen-name">Category Deck</div>
+              <div class="screen-desc">20+ topics: Quran, Hadith, Prophets, and Fiqh</div>
+            </div>
+          </div>
+
+          <!-- Screen 2 -->
+          <div class="phone-card" data-category="quizzes">
+            <div class="phone-chassis" onclick="openLightbox('assets/screenshots/02_lesson_list.png', '02. Structured Lesson Map')">
+              <div class="chassis-header"><div class="camera-lens"></div></div>
+              <div class="chassis-screen">
+                <img src="assets/screenshots/02_lesson_list.png" alt="02 Lesson Map" loading="lazy">
+                <div class="screen-overlay-zoom">🔍</div>
+              </div>
+            </div>
+            <div class="phone-meta">
+              <div class="screen-num">Screen 02</div>
+              <div class="screen-name">Lesson Milestones</div>
+              <div class="screen-desc">Level progression with mastery stars and badges</div>
+            </div>
+          </div>
+
+          <!-- Screen 3 -->
+          <div class="phone-card" data-category="quizzes">
+            <div class="phone-chassis" onclick="openLightbox('assets/screenshots/03_quiz_question.png', '03. Timed Quiz Challenge')">
+              <div class="chassis-header"><div class="camera-lens"></div></div>
+              <div class="chassis-screen">
+                <img src="assets/screenshots/03_quiz_question.png" alt="03 Quiz Challenge" loading="lazy">
+                <div class="screen-overlay-zoom">🔍</div>
+              </div>
+            </div>
+            <div class="phone-meta">
+              <div class="screen-num">Screen 03</div>
+              <div class="screen-name">Quiz &amp; 4 Lifelines</div>
+              <div class="screen-desc">Countdown timer with 50:50, Hint, Ask Scholar, Skip</div>
+            </div>
+          </div>
+
+          <!-- Screen 4 -->
+          <div class="phone-card" data-category="evidences">
+            <div class="phone-chassis" onclick="openLightbox('assets/screenshots/04_quran_hadith_explanation.png', '04. Authentic Quran & Hadith Evidences')">
+              <div class="chassis-header"><div class="camera-lens"></div></div>
+              <div class="chassis-screen">
+                <img src="assets/screenshots/04_quran_hadith_explanation.png" alt="04 Quran Evidences" loading="lazy">
+                <div class="screen-overlay-zoom">🔍</div>
+              </div>
+            </div>
+            <div class="phone-meta">
+              <div class="screen-num">Screen 04</div>
+              <div class="screen-name">Hadith &amp; Ayah Sources</div>
+              <div class="screen-desc">Exact Surah, Ayah, and Sahih Hadith citations</div>
+            </div>
+          </div>
+
+          <!-- Screen 5 -->
+          <div class="phone-card" data-category="quizzes">
+            <div class="phone-chassis" onclick="openLightbox('assets/screenshots/05_hearts_breaking.png', '05. Lifeline & Heart Dynamics')">
+              <div class="chassis-header"><div class="camera-lens"></div></div>
+              <div class="chassis-screen">
+                <img src="assets/screenshots/05_hearts_breaking.png" alt="05 Hearts & Lifelines" loading="lazy">
+                <div class="screen-overlay-zoom">🔍</div>
+              </div>
+            </div>
+            <div class="phone-meta">
+              <div class="screen-num">Screen 05</div>
+              <div class="screen-name">Heart &amp; Streaks</div>
+              <div class="screen-desc">Duolingo-style encouraging feedback on answers</div>
+            </div>
+          </div>
+
+          <!-- Screen 6 -->
+          <div class="phone-card" data-category="languages">
+            <div class="phone-chassis" onclick="openLightbox('assets/screenshots/06_history_continue_hindi.png', '06. Hindi Native Mode')">
+              <div class="chassis-header"><div class="camera-lens"></div></div>
+              <div class="chassis-screen">
+                <img src="assets/screenshots/06_history_continue_hindi.png" alt="06 Hindi Mode" loading="lazy">
+                <div class="screen-overlay-zoom">🔍</div>
+              </div>
+            </div>
+            <div class="phone-meta">
+              <div class="screen-num">Screen 06</div>
+              <div class="screen-name">हिन्दी (Hindi) Mode</div>
+              <div class="screen-desc">Full Devanagari translation with verified terms</div>
+            </div>
+          </div>
+
+          <!-- Screen 7 -->
+          <div class="phone-card" data-category="voice">
+            <div class="phone-chassis" onclick="openLightbox('assets/screenshots/07_ai_voice_scholar.png', '07. AI Voice Scholar')">
+              <div class="chassis-header"><div class="camera-lens"></div></div>
+              <div class="chassis-screen">
+                <img src="assets/screenshots/07_ai_voice_scholar.png" alt="07 Voice Scholar" loading="lazy">
+                <div class="screen-overlay-zoom">🔍</div>
+              </div>
+            </div>
+            <div class="phone-meta">
+              <div class="screen-num">Screen 07</div>
+              <div class="screen-name">AI Voice Scholar</div>
+              <div class="screen-desc">Real-time vocal explanations and Ayah recitations</div>
+            </div>
+          </div>
+
+          <!-- Screen 8 -->
+          <div class="phone-card" data-category="voice">
+            <div class="phone-chassis" onclick="openLightbox('assets/screenshots/08_settings_ai_scholar.png', '08. Scholar Voice Settings')">
+              <div class="chassis-header"><div class="camera-lens"></div></div>
+              <div class="chassis-screen">
+                <img src="assets/screenshots/08_settings_ai_scholar.png" alt="08 Voice Settings" loading="lazy">
+                <div class="screen-overlay-zoom">🔍</div>
+              </div>
+            </div>
+            <div class="phone-meta">
+              <div class="screen-num">Screen 08</div>
+              <div class="screen-name">Scholar Settings</div>
+              <div class="screen-desc">Choose reciter styles, speech pace, and haptics</div>
+            </div>
+          </div>
+
+          <!-- Screen 9 -->
+          <div class="phone-card" data-category="languages">
+            <div class="phone-chassis" onclick="openLightbox('assets/screenshots/09_urdu_rtl_quiz.png', '09. Urdu RTL Interface')">
+              <div class="chassis-header"><div class="camera-lens"></div></div>
+              <div class="chassis-screen">
+                <img src="assets/screenshots/09_urdu_rtl_quiz.png" alt="09 Urdu RTL" loading="lazy">
+                <div class="screen-overlay-zoom">🔍</div>
+              </div>
+            </div>
+            <div class="phone-meta">
+              <div class="screen-num">Screen 09</div>
+              <div class="screen-name">اردو (Urdu) RTL</div>
+              <div class="screen-desc">Elegant Noto Nastaliq right-to-left experience</div>
+            </div>
+          </div>
+
+          <!-- Screen 10 -->
+          <div class="phone-card" data-category="quizzes">
+            <div class="phone-chassis" onclick="openLightbox('assets/screenshots/10_dark_theme_hindi_quiz.png', '10. OLED Dark Theme')">
+              <div class="chassis-header"><div class="camera-lens"></div></div>
+              <div class="chassis-screen">
+                <img src="assets/screenshots/10_dark_theme_hindi_quiz.png" alt="10 Dark Theme" loading="lazy">
+                <div class="screen-overlay-zoom">🔍</div>
+              </div>
+            </div>
+            <div class="phone-meta">
+              <div class="screen-num">Screen 10</div>
+              <div class="screen-name">OLED Dark Mode</div>
+              <div class="screen-desc">High contrast theme for evening Ramadan study</div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Key Features -->
+      <section class="section-wrap" id="features">
+        <div class="section-title-box">
+          <div class="section-kicker">Core Strengths</div>
+          <h2 class="section-heading">Built Sincerely for Authentic Learning</h2>
+          <p class="section-lead">A distraction-free, ad-free environment to strengthen your deen.</p>
         </div>
 
         <div class="features-grid">
           <div class="feature-card">
             <div class="feature-icon-box">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
             </div>
-            <h3>4,000+ Authentic Questions</h3>
-            <p>Every single quiz item cites authentic sources—Quranic Surah &amp; Ayah or Sahih Hadith (Bukhari, Muslim, Tirmidhi, Abu Dawud, Nasai) with contextual explanations.</p>
+            <h3>1,000+ Verified Questions</h3>
+            <p>Every single quiz item cites authentic sources—Quranic Surah &amp; Ayah or Sahih Hadith (Bukhari, Muslim, Tirmidhi, Abu Dawud, Nasai) with full contextual explanations.</p>
           </div>
 
           <div class="feature-card">
             <div class="feature-icon-box">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
             </div>
             <h3>Trilingual Localization</h3>
             <p>Full native experience in English, Nastaliq Urdu (اردو), and Hindi (हिन्दी). Instant 1-tap language switching anywhere without losing your streak.</p>
@@ -1377,7 +1528,7 @@
 
           <div class="feature-card">
             <div class="feature-icon-box">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
             </div>
             <h3>AI Voice Scholar</h3>
             <p>Listen to vocal recitations and scholar-level explanations powered by AI. Choose voice speeds, tone, and reciter preferences in settings.</p>
@@ -1385,7 +1536,7 @@
 
           <div class="feature-card">
             <div class="feature-icon-box">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"/><path d="M10.71 5.05A16 16 0 0 1 22.56 9"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"/><path d="M10.71 5.05A16 16 0 0 1 22.56 9"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
             </div>
             <h3>100% Offline Capability</h3>
             <p>All categories, question banks, explanations, and sound effects work offline. Learn on flights, commutes, or during travel without internet.</p>
@@ -1393,7 +1544,7 @@
 
           <div class="feature-card">
             <div class="feature-icon-box">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
             </div>
             <h3>Gamified Progression</h3>
             <p>Stay motivated with hearts, XP points, continuous daily streaks, lesson levels, and 4 lifeline tools: 50:50, Hint, Ask Scholar, and Skip.</p>
@@ -1401,111 +1552,109 @@
 
           <div class="feature-card">
             <div class="feature-icon-box">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
             </div>
-            <h3>Private &amp; 100% Ad-Free</h3>
-            <p>No advertisements, no commercial trackers, no paywalls. Optional cloud sync with Google or continue completely anonymously as guest.</p>
+            <h3>100% Ad-Free &amp; Private</h3>
+            <p>Zero advertisements, zero marketing trackers, zero paywalls. Optional cloud sync with Google or continue completely anonymously as guest.</p>
           </div>
         </div>
       </section>
 
-      <!-- Easy Installation Guide -->
-      <section class="section" id="install">
-        <div class="section-header">
-          <span class="section-tag">Quick Setup</span>
-          <h2 class="section-title">How to Install on Android</h2>
-          <p class="section-subtitle">
-            Installing the official APK is fast and takes less than 30 seconds.
-          </p>
+      <!-- Install Guide -->
+      <section class="section-wrap" id="install">
+        <div class="section-title-box">
+          <div class="section-kicker">Quick Setup</div>
+          <h2 class="section-heading">How to Install on Android</h2>
+          <p class="section-lead">Installing the official APK is fast and takes less than 30 seconds.</p>
         </div>
 
-        <div class="install-steps-grid">
-          <div class="step-card">
-            <div class="step-num">1</div>
+        <div class="steps-grid">
+          <div class="step-box">
+            <div class="step-badge">1</div>
             <h3>Download APK</h3>
-            <p>Tap the <strong>Download APK</strong> button above or scan the QR code with your phone camera to download <code>IslamicQuiz-latest.apk</code> directly.</p>
+            <p>Tap <strong>Download APK</strong> above or scan the QR code to save <code>IslamicQuiz-latest.apk</code> directly to your device.</p>
           </div>
 
-          <div class="step-card">
-            <div class="step-num">2</div>
+          <div class="step-box">
+            <div class="step-badge">2</div>
             <h3>Allow Installation</h3>
-            <p>If Android prompts <em>"File might be harmful"</em>, tap <strong>Download Anyway</strong>. If prompted about unknown apps, toggle <strong>Allow from this source</strong> in settings.</p>
+            <p>If Android prompts <em>"File might be harmful"</em>, tap <strong>Download Anyway</strong>. If prompted for permissions, toggle <strong>Allow from this source</strong>.</p>
           </div>
 
-          <div class="step-card">
-            <div class="step-num">3</div>
+          <div class="step-box">
+            <div class="step-badge">3</div>
             <h3>Open &amp; Enjoy</h3>
-            <p>Tap the notification or open your Downloads folder, tap <strong>Install</strong>, and launch Islamic Quiz! Existing installs update automatically without losing progress.</p>
+            <p>Tap the notification or open Downloads, click <strong>Install</strong>, and launch Islamic Quiz! Existing installs update seamlessly without losing data.</p>
           </div>
         </div>
       </section>
 
-      <!-- Frequently Asked Questions -->
-      <section class="section" id="faq">
-        <div class="section-header">
-          <span class="section-tag">Got Questions?</span>
-          <h2 class="section-title">Frequently Asked Questions</h2>
+      <!-- FAQ -->
+      <section class="section-wrap" id="faq">
+        <div class="section-title-box">
+          <div class="section-kicker">Got Questions?</div>
+          <h2 class="section-heading">Frequently Asked Questions</h2>
         </div>
 
-        <div class="faq-container">
-          <div class="faq-item active">
-            <button class="faq-question" type="button" onclick="toggleFaq(this)">
+        <div class="faq-stack">
+          <div class="faq-card active">
+            <button class="faq-btn" type="button" onclick="toggleFaq(this)">
               <span>Is Islamic Quiz completely free?</span>
-              <span class="faq-icon">+</span>
+              <span class="faq-sign">+</span>
             </button>
-            <div class="faq-answer">
-              Yes, 100% free! There are zero advertisements, zero paywalls, and no paid subscriptions. It was built as a dedicated educational resource for students and families around the world.
+            <div class="faq-body">
+              Yes, 100% free forever! There are zero advertisements, zero subscriptions, and no paid feature locks. Built as a non-commercial educational resource for the global Ummah.
             </div>
           </div>
 
-          <div class="faq-item">
-            <button class="faq-question" type="button" onclick="toggleFaq(this)">
+          <div class="faq-card">
+            <button class="faq-btn" type="button" onclick="toggleFaq(this)">
               <span>Why does Android warn that the file might be harmful?</span>
-              <span class="faq-icon">+</span>
+              <span class="faq-sign">+</span>
             </button>
-            <div class="faq-answer">
-              Android displays this standard warning whenever you download any <code>.apk</code> file outside the Google Play Store. Our APK is built directly from our open-source GitHub repository and is 100% clean, verified, and safe.
+            <div class="faq-body">
+              Android displays this standard warning for any APK downloaded outside the Google Play Store. This build is created directly from our open-source GitHub repository and is 100% clean and safe.
             </div>
           </div>
 
-          <div class="faq-item">
-            <button class="faq-question" type="button" onclick="toggleFaq(this)">
-              <span>Will my progress be lost if I update the app?</span>
-              <span class="faq-icon">+</span>
+          <div class="faq-card">
+            <button class="faq-btn" type="button" onclick="toggleFaq(this)">
+              <span>Will my progress and streaks be preserved when updating?</span>
+              <span class="faq-sign">+</span>
             </button>
-            <div class="faq-answer">
-              No! The APK is signed with the same official key and uses an incremented version code. Android installs it as a seamless in-place update, preserving all your completed quizzes, streaks, and stars.
+            <div class="faq-body">
+              Yes! The APK is signed with the same key and has a higher version code, so Android installs it as a direct in-place update without affecting your saved stats or account.
             </div>
           </div>
 
-          <div class="faq-item">
-            <button class="faq-question" type="button" onclick="toggleFaq(this)">
+          <div class="faq-card">
+            <button class="faq-btn" type="button" onclick="toggleFaq(this)">
               <span>Can I use the app completely offline?</span>
-              <span class="faq-icon">+</span>
+              <span class="faq-sign">+</span>
             </button>
-            <div class="faq-answer">
-              Yes! All questions, options, Quranic citations, and explanations are stored locally on your device. You can enjoy the full quiz experience anywhere without Wi-Fi or mobile data.
+            <div class="faq-body">
+              Yes! The entire question bank, explanations, and sound effects are stored offline on your phone. You can play without Wi-Fi or mobile data anywhere.
             </div>
           </div>
 
-          <div class="faq-item">
-            <button class="faq-question" type="button" onclick="toggleFaq(this)">
+          <div class="faq-card">
+            <button class="faq-btn" type="button" onclick="toggleFaq(this)">
               <span>How do I enable the AI Voice Scholar feature?</span>
-              <span class="faq-icon">+</span>
+              <span class="faq-sign">+</span>
             </button>
-            <div class="faq-answer">
-              Sign in with your Google Account, navigate to Settings &gt; AI Scholar Voice, and provide a free Gemini API key (from Google AI Studio). The app also provides voice assistance via the cloud configuration when available.
+            <div class="faq-body">
+              Sign in with your Google Account, navigate to Settings &gt; AI Scholar Voice, and provide a free Gemini API key from Google AI Studio. The app also supports cloud voice configuration.
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Bottom CTA Banner -->
+      <!-- Bottom Banner -->
       <section class="cta-banner">
         <h2>Start Your Knowledge Journey Today</h2>
         <p>Join thousands of learners mastering Quran, Hadith, and Seerah with authentic interactive quizzes.</p>
-        <a href="IslamicQuiz-latest.apk" class="btn-mega-download" download style="display:inline-flex; width:auto; padding:18px 40px;">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        <a href="IslamicQuiz-latest.apk" class="btn-main-download" download style="display:inline-flex; width:auto; padding:18px 36px;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           Download Islamic Quiz APK (v1.1.9)
         </a>
       </section>
@@ -1513,20 +1662,20 @@
 
     <!-- Footer -->
     <footer>
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <h4>Islamic Quiz &middot; اسلامی کوئز</h4>
-          <p>
-            An authentic, open Islamic learning application designed to strengthen knowledge of Quran, Hadith, and the Prophet's ﷺ life. Developed with sincerity, free from commercial ads.
+      <div class="footer-row">
+        <div>
+          <h5 style="color:#f0fdf4; font-size:1.1rem; margin-bottom:8px;">Islamic Quiz &middot; اسلامی کوئز</h5>
+          <p style="color:#94a3b8; line-height:1.6; max-width:420px; margin-bottom:12px;">
+            An authentic, non-commercial Islamic learning app designed to strengthen knowledge of Quran, Hadith, and the Prophet's ﷺ life.
           </p>
-          <div style="font-size:0.85rem; color:#94a3b8;">
+          <div style="font-size:0.85rem; color:#64748b;">
             Developer: <strong>S.M. Muzammil Afroz</strong> &middot; <a href="mailto:tosmafroz@gmail.com" style="color:#34d399; text-decoration:none;">tosmafroz@gmail.com</a>
           </div>
         </div>
 
         <div class="footer-col">
           <h5>Quick Links</h5>
-          <ul class="footer-links">
+          <ul class="footer-menu">
             <li><a href="IslamicQuiz-latest.apk" download>Download APK</a></li>
             <li><a href="privacy-policy.html">Privacy Policy</a></li>
             <li><a href="privacy-policy.html#en">English Policy</a></li>
@@ -1536,10 +1685,10 @@
         </div>
 
         <div class="footer-col">
-          <h5>Community &amp; Code</h5>
-          <ul class="footer-links">
+          <h5>Community &amp; Source</h5>
+          <ul class="footer-menu">
             <li><a href="https://github.com/muzammilafroz/islamic-quiz-support" target="_blank" rel="noopener">Support Repository</a></li>
-            <li><a href="https://github.com/muzammilafroz/islamic-quiz-support/issues" target="_blank" rel="noopener">Report Issue or Bug</a></li>
+            <li><a href="https://github.com/muzammilafroz/islamic-quiz-support/issues" target="_blank" rel="noopener">Report Bug / Feedback</a></li>
             <li><a href="https://github.com/muzammilafroz/Islamic-Quiz-App" target="_blank" rel="noopener">Main App Repository</a></li>
             <li><a href="https://github.com/muzammilafroz/Islamic-Quiz-App/tree/apk-test" target="_blank" rel="noopener">Test APK Branch</a></li>
           </ul>
@@ -1550,165 +1699,120 @@
         <div>&copy; 2026 S.M. Muzammil Afroz &middot; Islamic Quiz App. Open-Source Educational Project.</div>
         <div>
           <a href="privacy-policy.html">Privacy Policy</a> &middot;
-          <a href="https://github.com/muzammilafroz/islamic-quiz-support/issues" target="_blank" rel="noopener">Feedback &amp; Issues</a>
+          <a href="https://github.com/muzammilafroz/islamic-quiz-support/issues" target="_blank" rel="noopener">Issues &amp; Feedback</a>
         </div>
       </div>
     </footer>
   </div>
 
-  <!-- Lightbox Modal for Full-Resolution Screenshot Viewing -->
-  <div class="lightbox-modal" id="lightbox" onclick="closeLightbox(event)">
-    <button class="lightbox-close" onclick="closeLightbox(event)" aria-label="Close modal">&times;</button>
-    <img src="" alt="Full Screen Screenshot" class="lightbox-content" id="lightbox-img">
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+    <button class="lightbox-close-btn" onclick="closeLightbox(event)" aria-label="Close modal">&times;</button>
+    <div class="lightbox-img-box">
+      <img src="" alt="Full Resolution Screenshot" id="lightbox-img">
+    </div>
   </div>
 
-  <!-- Interactive JavaScript Logic -->
+  <!-- JavaScript Interactions -->
   <script>
-    // Screenshot Gallery Dataset
-    const screenshotsData = [
-      {
-        badge: "SCREEN 01 OF 10",
-        title: "Category Deck & Comprehensive Topics",
-        desc: "Browse through 20+ comprehensive categories including Pillars of Islam, Quranic Knowledge, Life of the Prophet (Seerah), Hadith Sciences, and Islamic History.",
-        img: "assets/screenshots/01_home_category_deck.png"
-      },
-      {
-        badge: "SCREEN 02 OF 10",
-        title: "Lesson Progression & Milestones",
-        desc: "Interactive curriculum divided into bite-sized lessons with stars, mastery badges, and clear learning milestones.",
-        img: "assets/screenshots/02_lesson_list.png"
-      },
-      {
-        badge: "SCREEN 03 OF 10",
-        title: "Timed Quiz Challenges & Lifelines",
-        desc: "Engaging multiple-choice quizzes with countdown timer and 4 strategic lifelines: 50:50, Hint, Ask Scholar, and Skip.",
-        img: "assets/screenshots/03_quiz_question.png"
-      },
-      {
-        badge: "SCREEN 04 OF 10",
-        title: "Quran & Sahih Hadith Explanations",
-        desc: "Every single question reveals detailed textual evidences with exact Surah, Ayah, and Sahih Hadith reference numbers.",
-        img: "assets/screenshots/04_quran_hadith_explanation.png"
-      },
-      {
-        badge: "SCREEN 05 OF 10",
-        title: "Heart Dynamics & Feedback",
-        desc: "Duolingo-inspired heart mechanic with encouraging Islamic reminders when you make a mistake.",
-        img: "assets/screenshots/05_hearts_breaking.png"
-      },
-      {
-        badge: "SCREEN 06 OF 10",
-        title: "हिन्दी (Hindi) Native Mode",
-        desc: "Complete Devanagari translation with authentic terminology, verified by scholars for Hindi-speaking learners.",
-        img: "assets/screenshots/06_history_continue_hindi.png"
-      },
-      {
-        badge: "SCREEN 07 OF 10",
-        title: "AI Voice Scholar Audio",
-        desc: "Real-time AI audio explanations bringing history, context, and rulings to life with vocal clarity.",
-        img: "assets/screenshots/07_ai_voice_scholar.png"
-      },
-      {
-        badge: "SCREEN 08 OF 10",
-        title: "Personalized Scholar & Audio Settings",
-        desc: "Customize AI Scholar speech rate, reciter preferences, sound effects, and vibration feedback.",
-        img: "assets/screenshots/08_settings_ai_scholar.png"
-      },
-      {
-        badge: "SCREEN 09 OF 10",
-        title: "اردو (Urdu) Nastaliq RTL Interface",
-        desc: "Full right-to-left layout with elegant Noto Nastaliq typography crafted for Urdu speakers worldwide.",
-        img: "assets/screenshots/09_urdu_rtl_quiz.png"
-      },
-      {
-        badge: "SCREEN 10 OF 10",
-        title: "OLED Midnight Dark Theme",
-        desc: "High-contrast dark mode designed for comfortable reading during nighttime reflection and Ramadan study sessions.",
-        img: "assets/screenshots/10_dark_theme_hindi_quiz.png"
+    // Video Controls: Auto-mute, Tap-for-Sound, Play-Pause
+    const video = document.getElementById('promo-video');
+    const soundPill = document.getElementById('sound-pill');
+    const soundIcon = document.getElementById('sound-icon');
+    const soundLabel = document.getElementById('sound-label');
+
+    // Ensure autoplay muted loop on load
+    if (video) {
+      video.muted = true;
+      video.play().catch(function() {
+        // Autoplay policy handled
+      });
+    }
+
+    function toggleSound(e) {
+      if (e) e.stopPropagation();
+      if (!video) return;
+
+      if (video.muted) {
+        video.muted = false;
+        soundIcon.textContent = '🔊';
+        soundLabel.textContent = 'Sound On';
+        soundPill.style.background = 'rgba(5, 150, 105, 0.9)';
+      } else {
+        video.muted = true;
+        soundIcon.textContent = '🔇';
+        soundLabel.textContent = 'Muted · Tap for Audio';
+        soundPill.style.background = 'rgba(7, 19, 15, 0.85)';
       }
-    ];
+    }
 
-    let currentScreenIndex = 0;
+    function togglePlayPause() {
+      if (!video) return;
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    }
 
-    function selectScreen(index) {
-      currentScreenIndex = index;
-      const data = screenshotsData[index];
-      
-      const phoneImg = document.getElementById('main-phone-img');
-      phoneImg.style.opacity = '0';
-      phoneImg.style.transform = 'scale(0.97)';
-      
-      setTimeout(() => {
-        phoneImg.src = data.img;
-        phoneImg.alt = data.title;
-        phoneImg.style.opacity = '1';
-        phoneImg.style.transform = 'scale(1)';
-      }, 150);
+    // Screenshots Horizontal Scrolling
+    function scrollCarousel(direction) {
+      const deck = document.getElementById('screenshots-deck');
+      const scrollAmount = 310 * direction;
+      deck.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
 
-      document.getElementById('screen-badge').textContent = data.badge;
-      document.getElementById('screen-title').textContent = data.title;
-      document.getElementById('screen-desc').textContent = data.desc;
+    // Filter screenshots by category
+    function filterScreenshots(category, btn) {
+      document.querySelectorAll('.filter-pill').forEach(function(p) {
+        p.classList.remove('active');
+      });
+      btn.classList.add('active');
 
-      document.querySelectorAll('.thumb-btn').forEach((btn, idx) => {
-        if (idx === index) {
-          btn.classList.add('active');
-          btn.setAttribute('aria-selected', 'true');
+      const cards = document.querySelectorAll('.phone-card');
+      cards.forEach(function(card) {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.style.display = 'flex';
         } else {
-          btn.classList.remove('active');
-          btn.setAttribute('aria-selected', 'false');
+          card.style.display = 'none';
         }
       });
     }
 
-    // Lightbox handlers
-    function openLightbox() {
+    // Lightbox modal
+    function openLightbox(src, title) {
       const modal = document.getElementById('lightbox');
       const img = document.getElementById('lightbox-img');
-      img.src = screenshotsData[currentScreenIndex].img;
+      img.src = src;
+      img.alt = title;
       modal.classList.add('active');
     }
 
     function closeLightbox(e) {
-      if (e.target.id === 'lightbox' || e.target.classList.contains('lightbox-close')) {
+      if (e.target.id === 'lightbox' || e.target.classList.contains('lightbox-close-btn')) {
         document.getElementById('lightbox').classList.remove('active');
       }
     }
 
-    // Mirrors toggle
-    function toggleMirrors() {
-      const panel = document.getElementById('mirrors-panel');
-      const btn = document.querySelector('.mirrors-toggle');
-      panel.classList.toggle('show');
-      const isExpanded = panel.classList.contains('show');
-      btn.setAttribute('aria-expanded', isExpanded);
-    }
-
     // FAQ Accordion
     function toggleFaq(btn) {
-      const item = btn.parentElement;
-      const wasActive = item.classList.contains('active');
+      const card = btn.parentElement;
+      const wasActive = card.classList.contains('active');
       
-      document.querySelectorAll('.faq-item').forEach(el => {
-        el.classList.remove('active');
+      document.querySelectorAll('.faq-card').forEach(function(c) {
+        c.classList.remove('active');
       });
 
       if (!wasActive) {
-        item.classList.add('active');
+        card.classList.add('active');
       }
     }
 
-    // Keyboard navigation for screenshots
-    document.addEventListener('keydown', (e) => {
-      if (document.getElementById('lightbox').classList.contains('active')) {
-        if (e.key === 'Escape') {
-          document.getElementById('lightbox').classList.remove('active');
-        }
-        return;
-      }
-      if (e.key === 'ArrowRight') {
-        selectScreen((currentScreenIndex + 1) % screenshotsData.length);
-      } else if (e.key === 'ArrowLeft') {
-        selectScreen((currentScreenIndex - 1 + screenshotsData.length) % screenshotsData.length);
+    // Keyboard support
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        const modal = document.getElementById('lightbox');
+        if (modal) modal.classList.remove('active');
       }
     });
   </script>

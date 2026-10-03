@@ -30,7 +30,7 @@
 
 ## 🌟 Key Highlights
 
-* 📚 **4,000+ Authentic Questions:** Covering Quran, Hadith, Prophets, Seerah, Pillars of Islam, and Fiqh with exact Surah, Ayah, and Sahih Hadith citations.
+* 📚 **1,000+ Authentic Questions:** Covering Quran, Hadith, Prophets, Seerah, Pillars of Islam, and Fiqh with exact Surah, Ayah, and Sahih Hadith citations.
 * 🌐 **Trilingual Learning:** Seamless 1-tap switching between **English**, **اردو (Urdu Noto Nastaliq)**, and **हिन्दी (Hindi Devanagari)**.
 * 🎙️ **AI Voice Scholar:** Instant vocal explanations and Ayah recitations powered by AI.
 * ⚡ **100% Offline Mode:** Play without Wi-Fi or data connection anywhere in the world.
