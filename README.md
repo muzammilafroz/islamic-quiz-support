@@ -1,4 +1,4 @@
-﻿# 📖 Islamic Quiz — Official Download & Knowledge Hub
+﻿# 📖 Islamic Quiz - Official Download & Knowledge Hub
 
 <div align="center">
 

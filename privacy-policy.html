@@ -309,11 +309,131 @@
     .policy-content.active {
       display: block;
     }
+    /* Reflexive Mobile Adaptability & Footnote Styling */
+    .policy-footnote {
+      margin-top: 50px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .footnote-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .footnote-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+    }
+    .footnote-app-name {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--primary);
+    }
+    .footnote-sub {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+    .footnote-actions {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .footnote-home-link {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footnote-home-link:hover {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+    .footnote-download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--primary);
+      color: #ffffff !important;
+      text-decoration: none !important;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 7px 15px;
+      border-radius: 9999px;
+      box-shadow: 0 2px 8px rgba(6, 118, 78, 0.25);
+      transition: all 0.2s ease;
+    }
+    .footnote-download-btn:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 16px 14px 60px;
+        font-size: 15px;
+      }
+      .lang-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        padding-bottom: 12px;
+      }
+      .brand-group {
+        justify-content: center;
+      }
+      .lang-switcher {
+        width: 100%;
+        display: flex;
+      }
+      .lang-btn {
+        flex: 1;
+        padding: 8px 6px;
+        font-size: 13.5px;
+        text-align: center;
+      }
+      .meta-box {
+        padding: 12px 14px;
+        font-size: 0.88rem;
+      }
+      h1 {
+        font-size: 1.6rem;
+      }
+      h2 {
+        font-size: 1.2rem;
+      }
+      [lang="ur"] h1 {
+        font-size: 1.85rem;
+      }
+      [lang="ur"] h2 {
+        font-size: 1.4rem;
+      }
+      .policy-footnote {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+      }
+      .footnote-brand {
+        flex-direction: column;
+      }
+      .footnote-actions {
+        justify-content: center;
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <!-- Language Switcher Bar -->
+  <!-- Language Switcher Bar (Clean Header without top download button) -->
   <header class="lang-header">
     <div class="brand-group">
       <a href="index.html" class="brand-link" title="Islamic Quiz Knowledge Hub & Download Page">
@@ -321,16 +441,10 @@
         <span class="brand-title">Islamic Quiz</span>
       </a>
     </div>
-    <div class="header-actions">
-      <a href="IslamicQuiz-latest.apk" class="download-nav-btn" download title="Download APK directly">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-        Download APK
-      </a>
-      <div class="lang-switcher" role="tablist" aria-label="Language selection">
-        <button class="lang-btn active" id="btn-en" onclick="switchLanguage('en')" role="tab" aria-selected="true">English</button>
-        <button class="lang-btn" id="btn-ur" onclick="switchLanguage('ur')" role="tab" aria-selected="false">اردو</button>
-        <button class="lang-btn" id="btn-hi" onclick="switchLanguage('hi')" role="tab" aria-selected="false">हिन्दी</button>
-      </div>
+    <div class="lang-switcher" role="tablist" aria-label="Language selection">
+      <button class="lang-btn active" id="btn-en" onclick="switchLanguage('en')" role="tab" aria-selected="true">English</button>
+      <button class="lang-btn" id="btn-ur" onclick="switchLanguage('ur')" role="tab" aria-selected="false">اردو</button>
+      <button class="lang-btn" id="btn-hi" onclick="switchLanguage('hi')" role="tab" aria-selected="false">हिन्दी</button>
     </div>
   </header>
 
@@ -597,6 +711,25 @@
       </a>
     </div>
   </main>
+
+
+  <!-- Reflexive Mobile-Friendly Footnote with Small Download Button -->
+  <footer class="policy-footnote">
+    <div class="footnote-brand">
+      <img src="assets/icon_512.png" alt="Islamic Quiz Logo" class="footnote-icon">
+      <div>
+        <div class="footnote-app-name">Islamic Quiz</div>
+        <div class="footnote-sub">Free, Ad-Free Islamic Education</div>
+      </div>
+    </div>
+    <div class="footnote-actions">
+      <a href="index.html" class="footnote-home-link">&larr; Back to App Showcase</a>
+      <a href="IslamicQuiz-latest.apk" class="footnote-download-btn" download title="Download APK directly">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        <span>Download APK (v1.1.9)</span>
+      </a>
+    </div>
+  </footer>
 
   <script>
     function switchLanguage(lang) {
