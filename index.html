@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Islamic Quiz - Support & Policies</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --primary: #06764e;
+      --primary-light: #ecfdf5;
+      --border: #e2e8f0;
+      --accent: #044e34;
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b1322;
+        --card-bg: #131f37;
+        --text-main: #f1f5f9;
+        --text-muted: #94a3b8;
+        --primary: #10b981;
+        --primary-light: #064e3b;
+        --border: #1e293b;
+        --accent: #34d399;
+        --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+      align-items: center;
+    }
+    .container {
+      max-width: 640px;
+      width: 100%;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 36px 32px;
+      box-shadow: var(--shadow);
+    }
+    .badge {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 9999px;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 1.85rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+    p.subtitle {
+      color: var(--text-muted);
+      margin-bottom: 28px;
+      font-size: 1rem;
+    }
+    .links-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+    .card-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      text-decoration: none;
+      color: var(--text-main);
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+    .card-link:hover {
+      border-color: var(--primary);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
+    }
+    .card-link .desc {
+      font-size: 0.85rem;
+      font-weight: normal;
+      color: var(--text-muted);
+      display: block;
+      margin-top: 2px;
+    }
+    .card-link .arrow {
+      font-size: 1.25rem;
+      color: var(--primary);
+      margin-left: 12px;
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      padding-top: 20px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <span class="badge">Official Support Hub</span>
+    <h1>Islamic Quiz</h1>
+    <p class="subtitle">Support, feedback, issue reporting, and privacy policy for the Islamic Quiz app.</p>
+
+    <div class="links-grid">
+      <a class="card-link" href="privacy-policy.html">
+        <div>
+          <span>Privacy Policy</span>
+          <span class="desc">Learn how your data, progress, and cloud backups are handled.</span>
+        </div>
+        <span class="arrow">&rarr;</span>
+      </a>
+
+      <a class="card-link" href="https://github.com/muzammilafroz/islamic-quiz-support/issues" target="_blank" rel="noopener">
+        <div>
+          <span>Report an Issue or Bug</span>
+          <span class="desc">Open a public issue or suggestion directly on GitHub.</span>
+        </div>
+        <span class="arrow">&rarr;</span>
+      </a>
+
+      <a class="card-link" href="mailto:tosmafroz@gmail.com">
+        <div>
+          <span>Email Support</span>
+          <span class="desc">Contact developer directly at tosmafroz@gmail.com</span>
+        </div>
+        <span class="arrow">&rarr;</span>
+      </a>
+    </div>
+
+    <footer>
+      Developer: S.M. Muzammil Afroz &middot; <a href="mailto:tosmafroz@gmail.com">tosmafroz@gmail.com</a>
+    </footer>
+  </div>
+</body>
+</html>
