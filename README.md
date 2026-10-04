@@ -8,7 +8,6 @@
 **English • اردو (Urdu) • हिन्दी (Hindi)**
 
 [![Direct APK Download](https://img.shields.io/badge/Download_APK-v1.1.9-059669?style=for-the-badge&logo=android&logoColor=white)](https://muzammilafroz.github.io/islamic-quiz-support/IslamicQuiz-latest.apk)
-[![License: MIT](https://img.shields.io/badge/License-MIT-amber.svg?style=for-the-badge)](https://github.com/muzammilafroz/Islamic-Quiz-App/blob/main/LICENSE)
 [![GitHub Pages](https://img.shields.io/badge/Live_Hub-Online-10b981?style=for-the-badge&logo=githubpages&logoColor=white)](https://muzammilafroz.github.io/islamic-quiz-support/)
 
 [**🌐 Live Download & Showcase Website**](https://muzammilafroz.github.io/islamic-quiz-support/) • [**📜 Privacy Policy**](https://muzammilafroz.github.io/islamic-quiz-support/privacy-policy.html) • [**🐛 Report Issue / Feedback**](https://github.com/muzammilafroz/islamic-quiz-support/issues)
@@ -23,7 +22,6 @@
 | :--- | :--- | :--- | :--- | :--- |
 | **`IslamicQuiz-latest.apk`** | `v1.1.922259` | **38.9 MB** | Android 8.0 (Oreo)+ | [⬇️ Download Direct APK](https://muzammilafroz.github.io/islamic-quiz-support/IslamicQuiz-latest.apk) |
 
-> **Backup Mirror:** [GitHub Raw (apk-test branch)](https://raw.githubusercontent.com/muzammilafroz/Islamic-Quiz-App/apk-test/IslamicQuiz-debug.apk)  
 > **SHA-256 Checksum:** `25FF767E1BF1C79B79895B3032D80B39158E1248DCD80E42741BF99818D46849`
 
 ---
@@ -59,4 +57,3 @@
 * **Developer:** S.M. Muzammil Afroz
 * **Email:** [tosmafroz@gmail.com](mailto:tosmafroz@gmail.com)
 * **GitHub Issues:** [Open a new issue or suggestion](https://github.com/muzammilafroz/islamic-quiz-support/issues)
-* **Main App Repository:** [muzammilafroz/Islamic-Quiz-App](https://github.com/muzammilafroz/Islamic-Quiz-App)
